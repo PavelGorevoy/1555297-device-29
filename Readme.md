@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Павел Горевой](https://up.htmlacademy.ru/htmlcss/29/user/1555297).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Белокур](https://htmlacademy.ru/profile/alex-belokur).
 
 ---
 

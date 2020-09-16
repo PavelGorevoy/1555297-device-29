@@ -203,6 +203,13 @@ li {
   border: 0;
 }
 
+.hover-price {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
 .hover-titel {
   font-weight: 800;
   font-size: 18px;
@@ -210,12 +217,6 @@ li {
   letter-spacing: 0.05em;
 }
 
-.hover-price {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 18px;
-  letter-spacing: 0.05em;
-}
 
 .rectangle {
   background-color: #EBEBEB;

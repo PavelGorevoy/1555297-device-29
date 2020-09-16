@@ -1,0 +1,154 @@
+:root {
+  --special-yellow: #f7e296;
+  --special-yellow-dark: #f0c52e;
+  --special-yellow-light: #f7e296;
+  --basic-black: #000;
+  --basic-dark: #363636;
+  --basic-grey-light: #e5e5e5;
+  --basic-white: #fff;
+  --bodu-bg: var(--basic-white);
+  --header-color: var(--special-yellow);
+}
+
+body {
+  min-width: 1160px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+  background-color: var(--bodu-bg);
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+li {
+  list-style-type: none;
+}
+
+.header {
+  background-color: var(--header-color);
+  width: 1160px;
+  margin: 20px auto 0;
+}
+
+.search-form {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-menu {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.nav-header-list-link {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.nav-header {
+  font-size: 18px;
+}
+
+.main {
+
+}
+. {
+
+}
+.slider-product {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.title {
+  display: none; /*временная заглушка*/
+}
+
+.slider-product-toggle {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.slider-product-table-heding {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 300;
+}
+
+.slider-product-table-spec {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 300;
+}
+
+.services {
+  background-color: var(--basic-grey-light);
+}
+
+.text-sign {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.popular-img {
+  width: 160px;
+  height: 160px;
+}
+
+.list-popular-text {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+}
+
+.partners-img {
+  width: 260px;
+  height: 100px;
+}
+
+.button {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  font-size: 47px;
+  line-height: 58px;
+  font-weight: 800;
+}
+
+.about-list-text-item {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 800;
+}
+
+.footer {
+  background-color: var(--basic-dark);
+}
+
+.footer-link-item {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-address {
+  color: var(--basic-white)
+}
+
+.footer-list-item-link {
+  color: var(--basic-white);
+}
+
+.footer-tel {
+  color: var(--basic-white);
+}
+

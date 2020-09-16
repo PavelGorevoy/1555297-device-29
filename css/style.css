@@ -49,6 +49,7 @@ li {
   font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .nav-header {
@@ -58,9 +59,11 @@ li {
 .main {
 
 }
+
 . {
 
 }
+
 .slider-product {
   width: 1160px;
   margin: 0 auto;
@@ -80,12 +83,14 @@ li {
   font-size: 13px;
   line-height: 15px;
   font-weight: 300;
+  letter-spacing: 0.1em;
 }
 
 .slider-product-table-spec {
   font-size: 36px;
   line-height: 42px;
   font-weight: 300;
+  letter-spacing: 0.1em;
 }
 
 .services {
@@ -107,6 +112,7 @@ li {
   font-size: 18px;
   line-height: 22px;
   font-weight: 800;
+  letter-spacing: 0.05em;
 }
 
 .partners-img {
@@ -118,6 +124,7 @@ li {
   font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .sub-title {
@@ -146,9 +153,92 @@ li {
 
 .footer-list-item-link {
   color: var(--basic-white);
+  letter-spacing: 0.2em;
 }
 
 .footer-tel {
   color: var(--basic-white);
 }
 
+.bread-crumbs-list-link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.sorting-button {
+  background-color: var(--basic-grey-light);
+}
+
+.button-vector {
+  background-color: var(--basic-grey-light);
+}
+
+.titel-sorting {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.section-filter {
+  background-color: #DCDCDC;
+}
+
+.title-filter {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.button-sorting-item {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  border: 0;
+}
+
+.hover-titel {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.hover-price {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+.rectangle {
+  background-color: #EBEBEB;
+}
+
+.rectangle-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 0;
+  letter-spacing: 0.1em;
+}
+
+.nav-list-link-page {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 800;
+  opacity: 0.3;
+}
+
+.nav-list-link-page1 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 800;
+}

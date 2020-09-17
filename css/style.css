@@ -266,6 +266,12 @@ li {
   background: transparent;
 }
 
+.nav-list-link-page1 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 800;
+}
+
 .nav-list-link-page {
   font-size: 16px;
   line-height: 20px;
@@ -273,8 +279,4 @@ li {
   opacity: 0.3;
 }
 
-.nav-list-link-page1 {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 800;
-}
+

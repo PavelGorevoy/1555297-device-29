@@ -22,7 +22,18 @@
   </div>
   <nav class="nav-header">
     <ul class="nav-header-list">
-      <li><a class="nav-header-list-link" style="letter-spacing: 0.1em" href="catalog.html">Каталог товаров</a></li>
+      <li>
+        <a class="nav-header-list-link nav-heder-list-link-catalog" href="catalog.html">Каталог товаров</a>
+        <button type="button" name="catalog-menu"></button>
+        <ul class="header-catalog-menu">
+          <li><a href="#" class="header-catalog-menu-link">Виртуальная реальность</a></li>
+          <li><a href="catalog.html" class="header-catalog-menu-link">Моноподы для селфи</a></li>
+          <li><a href="#" class="header-catalog-menu-link">Экшн-камеры</a></li>
+          <li><a href="#" class="header-catalog-menu-link">Фитнес-браслеты</a></li>
+          <li><a href="#" class="header-catalog-menu-link">Умные часы</a></li>
+          <li><a href="#" class="header-catalog-menu-link">Квадракоптеры</a></li>
+        </ul>
+      </li>
       <li><a class="nav-header-list-link" href="#">Доставка</a></li>
       <li><a class="nav-header-list-link" href="#">Гарантия</a></li>
       <li><a class="nav-header-list-link" href="#">Контакты</a></li>
@@ -33,28 +44,74 @@
   <h1 class="title">Магазин Device</h1>
   <section class="slider-product">
     <h2 class="title">Информация о товаре</h2>
-    <img class="slider-product-img" src="https://via.placeholder.com/384x486" width="384" height="486" alt="">
-    <span class="slider-product-title sub-title">Делай селфи, как&nbsp;Бен Стиллер!</span>
-    <p class="text-sign">
-      Самая длинная палка для селфи доступна в нашем магазине.
-      Восемь (Восемь, Карл!) метров длинной и весом всего 5 киллограмм.
-    </p>
-    <a class="slider-product-link button" href="">ПОДРОБНЕЕ</a>
-    <input class="slider-product-toggle" type="radio" name="slider"><!--Кнопки слайдера-->
-    <input class="slider-product-toggle" type="radio" name="slider"><!--Кнопки слайдера-->
-    <input class="slider-product-toggle" type="radio" name="slider"><!--Кнопки слайдера-->
-    <table class="slider-product-table">
-      <tr>
-        <th class="slider-product-table-heding">Длина палки</th>
-        <th class="slider-product-table-heding">Вес палки</th>
-        <th class="slider-product-table-heding">Материал</th>
-      </tr>
-      <tr>
-        <td class="slider-product-table-spec">8,5 м</td>
-        <td class="slider-product-table-spec">5 кг</td>
-        <td class="slider-product-table-spec">Карбон</td>
-      </tr>
-    </table>
+    <ul class="slider-prodect-item">
+      <li class="slider-product-item-page">
+        <img class="slider-product-img" src="https://via.placeholder.com/384x486" width="384" height="486" alt="">
+        <span class="slider-product-title sub-title">Делай селфи, как&nbsp;Бен Стиллер!</span>
+        <p class="text-sign">
+          Самая длинная палка для селфи доступна в нашем магазине.
+          Восемь (Восемь, Карл!) метров длинной и весом всего 5 киллограмм.
+        </p>
+        <a class="slider-product-link button" href="">ПОДРОБНЕЕ</a>
+        <input class="slider-product-toggle" type="radio" name="slider"><!--Кнопки слайдера-->
+        <input class="slider-product-toggle" type="radio" name="slider"><!--Кнопки слайдера-->
+        <input class="slider-product-toggle" type="radio" name="slider"><!--Кнопки слайдера-->
+        <table class="slider-product-table">
+          <tr>
+            <th class="slider-product-table-heding">Длина палки</th>
+            <th class="slider-product-table-heding">Вес палки</th>
+            <th class="slider-product-table-heding">Материал</th>
+          </tr>
+          <tr>
+            <td class="slider-product-table-spec">8,5 м</td>
+            <td class="slider-product-table-spec">5 кг</td>
+            <td class="slider-product-table-spec">Карбон</td>
+          </tr>
+        </table>
+      </li>
+      <li class="slider-product-item-page">
+        <img class="slider-product-img" src="https://via.placeholder.com/384x486" width="384" height="486" alt="">
+        <span class="slider-product-title sub-title">Худеем правильно!</span>
+        <p class="text-sign">
+          Мотивирующие фитнес-браслеты помогут найти в себе
+          силы не пропускать занятия и соблюдать диету.
+        </p>
+        <a class="slider-product-link button" href="">ПОДРОБНЕЕ</a>
+        <input class="slider-product-toggle" type="radio" name="slider"><!--Кнопки слайдера-->
+        <input class="slider-product-toggle" type="radio" name="slider"><!--Кнопки слайдера-->
+        <input class="slider-product-toggle" type="radio" name="slider"><!--Кнопки слайдера-->
+        <table class="slider-product-table">
+          <tr>
+            <th class="slider-product-table-heding">Без подзарядки</th>
+          </tr>
+          <tr>
+            <td class="slider-product-table-spec">48 часов</td>
+          </tr>
+        </table>
+      </li>
+      <li class="slider-product-item-page">
+        <img class="slider-product-img" src="https://via.placeholder.com/384x486" width="384" height="486" alt="">
+        <span class="slider-product-title sub-title">Пархает как бабочка, жалит как пчела!</span>
+        <p class="text-sign">
+          Этот обычный, на первый взгляд, квадрокоптер оснащен
+          мощным лазером, замаскированным под стандартную камеру.
+        </p>
+        <a class="slider-product-link button" href="">ПОДРОБНЕЕ</a>
+        <input class="slider-product-toggle" type="radio" name="slider"><!--Кнопки слайдера-->
+        <input class="slider-product-toggle" type="radio" name="slider"><!--Кнопки слайдера-->
+        <input class="slider-product-toggle" type="radio" name="slider"><!--Кнопки слайдера-->
+        <table class="slider-product-table">
+          <tr>
+            <th class="slider-product-table-heding">Дальность полета</th>
+            <th class="slider-product-table-heding">Радиус поражения</th>
+          </tr>
+          <tr>
+            <td class="slider-product-table-spec">800 м</td>
+            <td class="slider-product-table-spec">50 м</td>
+          </tr>
+        </table>
+      </li>
+    </ul>
   </section>
   <section class="popular">
     <h2 class="title">Ссылки на товары</h2>
@@ -99,18 +156,32 @@
   </section>
   <section class="services">
     <h2 class="title">Наши преймущества</h2>
-    <ul>
-      <li><a class="button" href="">ДОСТАВКА</a></li>
-      <li><a class="button" href="">ГАРАНТИЯ</a></li>
-      <li><a class="button" href="">КРЕДИТ</a></li>
-    </ul>
-    <ul>
-      <li>
+    <ul class="slider-services">
+      <button class="button slider-services-button" type="button" name="delivery">ДОСТАВКА</button>
+      <button class="button slider-services-button" type="button" name="guarantee">ГАРАНТИЯ</button>
+      <button class="button slider-services-button" type="button" name="credit">КРЕДИТ</button>
+      <li class="slider-services-item">
         <h2 class="sub-title">Доставка</h2>
         <p class="text-sign">
           Мы с удовольствием доставим ваш товар прямо к вашему
           подъезду совершенно бесплатно! Ведь мы неплохо
           зарабоьаем, поднимая его на ваш этаж.
+        </p>
+      </li>
+      <li class="slider-services-item">
+        <h2 class="sub-title">Гарантия</h2>
+        <p class="text-sign">
+          Если из-за возгорания купленного у нас товара у вас сгорит дом -
+          не переживайте, мы выдадим вам новый.
+          Товар, не дом, конечно же.
+        </p>
+      </li>
+      <li class="slider-services-item">
+        <h2 class="sub-title">Кредит</h2>
+        <p class="text-sign">
+          Залезть в долговую яму стало проще! Кредитные консультанты
+          подберут для вас наиболее выгодные
+          условия кредита. Выгодные для нашего банка, разумеется.
         </p>
       </li>
     </ul>
@@ -164,7 +235,7 @@
       проверить работоспособность покупки. Всякое бывает.
     </p>
     <!-- Здесь будет карта -->
-    <a class="button" href="">НАПИШИТЕ НАМ</a>
+    <a class="button " type="button">НАПИШИТЕ НАМ</a>
   </section>
 </main>
 <footer class="footer">
@@ -210,5 +281,27 @@
     <img src="https://via.placeholder.com/26,94x34" width="26,94" height="34" alt="Логотип HTMLAcademy">
   </a>
 </footer>
+<section class="form-map">
+  <!-- Здесь будет карта -->
+  <button class="button-close" type="button" name="close"></button>
+</section>
+<section class="form-about">
+  <h2 class="title">Напишите нам</h2>
+  <ul>
+    <li>
+      <span class="form-about">Ваше имя:</span>
+      <!--Форма-->
+    </li>
+    <li>
+      <span class="form-about">Ваш e-mail:</span>
+      <!--Форма-->
+    </li>
+    <li>
+      <span class="form-about">Текст письма:</span>
+      <!--Форма-->
+    </li>
+  </ul>
+  <button class="button button-submit" type="submit" name="button-submit">ОТПРАВИТЬ</button>
+</section>
 </body>
 </html>

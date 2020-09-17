@@ -6,6 +6,10 @@
   --basic-dark: #363636;
   --basic-grey-light: #e5e5e5;
   --basic-white: #fff;
+  --filter-color: #DCDCDC;
+  --rectangle-color: #EBEBEB;
+  --serch-form-rgba: rgba(0, 0, 0, 0.3);
+  --footer-link-rgba: rgba(255, 255, 255, 0.7);
   --bodu-bg: var(--basic-white);
   --header-color: var(--special-yellow);
 }
@@ -36,13 +40,20 @@ li {
 }
 
 .search-form {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--serch-form-rgba);
 }
 
 .header-menu {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: normal;
+}
+
+.header-catalog-menu-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
 }
 
 .nav-header-list-link {
@@ -52,16 +63,12 @@ li {
   letter-spacing: 0.2em;
 }
 
+.nav-heder-list-link-catalog {
+  letter-spacing: 0.1em;
+}
+
 .nav-header {
   font-size: 18px;
-}
-
-.main {
-
-}
-
-. {
-
 }
 
 .slider-product {
@@ -97,6 +104,11 @@ li {
   background-color: var(--basic-grey-light);
 }
 
+.slider-services-button {
+  border: 0;
+  background: transparent;
+}
+
 .text-sign {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
@@ -123,8 +135,11 @@ li {
 .button {
   font-size: 18px;
   font-weight: 800;
+  line-height: 22px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  border: 0;
+  background: transparent;
 }
 
 .sub-title {
@@ -144,7 +159,7 @@ li {
 }
 
 .footer-link-item {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--footer-link-rgba);
 }
 
 .footer-address {
@@ -158,6 +173,17 @@ li {
 
 .footer-tel {
   color: var(--basic-white);
+}
+
+.form-about {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+}
+
+.button-submit {
+  border: 0;
+  background: transparent;
 }
 
 .bread-crumbs-list-link {
@@ -175,7 +201,7 @@ li {
   background-color: var(--basic-grey-light);
 }
 
-.titel-sorting {
+.title-sorting {
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -184,7 +210,7 @@ li {
 }
 
 .section-filter {
-  background-color: #DCDCDC;
+  background-color: var(--filter-color);
 }
 
 .title-filter {
@@ -217,9 +243,8 @@ li {
   letter-spacing: 0.05em;
 }
 
-
 .rectangle {
-  background-color: #EBEBEB;
+  background-color: var(--rectangle-color);
 }
 
 .rectangle-button {
@@ -229,6 +254,16 @@ li {
   text-transform: uppercase;
   border: 0;
   letter-spacing: 0.1em;
+}
+
+.comprison {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  border: 0;
+  background: transparent;
 }
 
 .nav-list-link-page {

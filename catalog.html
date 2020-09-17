@@ -15,14 +15,25 @@
     <img src="https://via.placeholder.com/163,3x34,96" width="163,3" height="34.96" alt="Логотип магазина «Device»">
   </a>
   <div class="haeder-menu">
-    <input class="search-form text-sign" style="letter-spacing: 0.1em" type="search" placeholder="Поиск по сайту">
+    <input class="search-form text-sign" type="search" placeholder="Поиск по сайту">
     <a class="menu-link text-sign" href="blank.html">Войти</a>
     <a class="menu-link text-sign" href="#">Сравнить</a>
     <a class="menu-link text-sign" href="#">Корзина</a>
   </div>
   <nav class="nav-header">
     <ul class="nav-header-list">
-      <li><a class="nav-header-list-link" href="catalog.html">Каталог товаров</a></li>
+      <li>
+        <a class="nav-header-list-link nav-heder-list-link-catalog" href="catalog.html">Каталог товаров</a>
+        <button type="button" name="catalog-menu"></button>
+        <ul class="header-catalog-menu">
+          <li><a href="#" class="header-catalog-menu-link">Виртуальная реальность</a></li>
+          <li><a href="catalog.html" class="header-catalog-menu-link">Моноподы для селфи</a></li>
+          <li><a href="#" class="header-catalog-menu-link">Экшн-камеры</a></li>
+          <li><a href="#" class="header-catalog-menu-link">Фитнес-браслеты</a></li>
+          <li><a href="#" class="header-catalog-menu-link">Умные часы</a></li>
+          <li><a href="#" class="header-catalog-menu-link">Квадракоптеры</a></li>
+        </ul>
+      </li>
       <li><a class="nav-header-list-link" href="#">Доставка</a></li>
       <li><a class="nav-header-list-link" href="#">Гарантия</a></li>
       <li><a class="nav-header-list-link" href="#">Контакты</a></li>
@@ -48,7 +59,7 @@
   </section>
   <section class="section-sorting">
     <div class="sorting-button">
-      <h2 class="titel-sorting">СОРТИРОВКА:</h2>
+      <h2 class="title-sorting">СОРТИРОВКА:</h2>
       <div class="sorting-button-link">
         <button class="button-sorting-item" type="button">По цене</button>
         <button class="button-sorting-item" type="button">По типу</button>
@@ -70,6 +81,10 @@
                    alt="Любительская селфи-палка">
             </p>
           </a>
+          <div>
+            <button class="button" type="button" name="trash">В корзину</button>
+            <button class="comprison" type="button" name="add-to-comparison">Добавить к сравнению</button>
+          </div>
         </li>
         <li class="hover-item">
           <a href="#">
@@ -80,6 +95,10 @@
                    alt="Профессиональная селфи-палка">
             </p>
           </a>
+          <div>
+            <button class="button" type="button" name="trash">В корзину</button>
+            <button class="comprison" type="button" name="add-to-comparison">Добавить к сравнению</button>
+          </div>
         </li>
         <li class="hover-item">
           <a href="#">
@@ -90,6 +109,10 @@
                    alt="Непотопляемая селфи-палка">
             </p>
           </a>
+          <div>
+            <button class="button" type="button" name="trash">В корзину</button>
+            <button class="comprison" type="button" name="add-to-comparison">Добавить к сравнению</button>
+          </div>
         </li>
         <li class="hover-item">
           <a href="#">
@@ -100,6 +123,10 @@
                    alt="Непотопляемая селфи-палка">
             </p>
           </a>
+          <div>
+            <button class="button" type="button" name="trash">В корзину</button>
+            <button class="comprison" type="button" name="add-to-comparison">Добавить к сравнению</button>
+          </div>
         </li>
       </ul>
     </div>

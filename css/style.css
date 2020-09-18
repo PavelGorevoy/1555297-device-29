@@ -1,0 +1,282 @@
+:root {
+  --special-yellow: #f7e296;
+  --special-yellow-dark: #f0c52e;
+  --special-yellow-light: #f7e296;
+  --basic-black: #000;
+  --basic-dark: #363636;
+  --basic-grey-light: #e5e5e5;
+  --basic-white: #fff;
+  --filter-color: #DCDCDC;
+  --rectangle-color: #EBEBEB;
+  --serch-form-rgba: rgba(0, 0, 0, 0.3);
+  --footer-link-rgba: rgba(255, 255, 255, 0.7);
+  --bodu-bg: var(--basic-white);
+  --header-color: var(--special-yellow);
+}
+
+body {
+  min-width: 1160px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+  background-color: var(--bodu-bg);
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+li {
+  list-style-type: none;
+}
+
+.header {
+  background-color: var(--header-color);
+  width: 1160px;
+  margin: 20px auto 0;
+}
+
+.search-form {
+  color: var(--serch-form-rgba);
+}
+
+.header-menu {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.header-catalog-menu-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.nav-header-list-link {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.nav-heder-list-link-catalog {
+  letter-spacing: 0.1em;
+}
+
+.nav-header {
+  font-size: 18px;
+}
+
+.slider-product {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.title {
+  display: none; /*временная заглушка*/
+}
+
+.slider-product-toggle {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.slider-product-table-heding {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.slider-product-table-spec {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.services {
+  background-color: var(--basic-grey-light);
+}
+
+.slider-services-button {
+  border: 0;
+  background: transparent;
+}
+
+.text-sign {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.popular-img {
+  width: 160px;
+  height: 160px;
+}
+
+.list-popular-text {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.partners-img {
+  width: 260px;
+  height: 100px;
+}
+
+.button {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border: 0;
+  background: transparent;
+}
+
+.sub-title {
+  font-size: 47px;
+  line-height: 58px;
+  font-weight: 800;
+}
+
+.about-list-text-item {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 800;
+}
+
+.footer {
+  background-color: var(--basic-dark);
+}
+
+.footer-link-item {
+  color: var(--footer-link-rgba);
+}
+
+.footer-address {
+  color: var(--basic-white)
+}
+
+.footer-list-item-link {
+  color: var(--basic-white);
+  letter-spacing: 0.2em;
+}
+
+.footer-tel {
+  color: var(--basic-white);
+}
+
+.form-about {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+}
+
+.button-submit {
+  border: 0;
+  background: transparent;
+}
+
+.bread-crumbs-list-link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.sorting-button {
+  background-color: var(--basic-grey-light);
+}
+
+.button-vector {
+  background-color: var(--basic-grey-light);
+}
+
+.title-sorting {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.section-filter {
+  background-color: var(--filter-color);
+}
+
+.title-filter {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.button-sorting-item {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  border: 0;
+}
+
+.hover-price {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+.hover-titel {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.rectangle {
+  background-color: var(--rectangle-color);
+}
+
+.rectangle-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 0;
+  letter-spacing: 0.1em;
+}
+
+.comprison {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  border: 0;
+  background: transparent;
+}
+
+.nav-list-link-page1 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 800;
+}
+
+.nav-list-link-page {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 800;
+  opacity: 0.3;
+}
+
+

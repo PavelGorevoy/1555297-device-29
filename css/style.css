@@ -41,6 +41,13 @@ li {
 
 .search-form {
   color: var(--serch-form-rgba);
+  border: 0;
+  background: transparent;
+  outline: none;
+}
+
+.plus-image {
+  outline: none;
 }
 
 .header-menu {
@@ -69,6 +76,38 @@ li {
 
 .nav-header {
   font-size: 18px;
+}
+
+.popular-img {
+  width: 160px;
+  height: 160px;
+  background-color: var(--special-yellow-light);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.vr-img {
+  background-image: url("../img/popular1.svg");
+}
+
+.mn-for-self {
+  background-image: url("../img/popular2.svg");
+}
+
+.act-cam {
+  background-image: url("../img/popular3.svg");
+}
+
+.fit-brac {
+  background-image: url("../img/popular4.svg");
+}
+
+.smart-cl {
+  background-image: url("../img/popular5.svg");
+}
+
+.quadcopter {
+  background-image: url("../img/popular6.svg");
 }
 
 .slider-product {
@@ -132,6 +171,22 @@ li {
   height: 100px;
 }
 
+.dji {
+  background-image: url("../img/logotypes1.png");
+}
+
+.sp_adgets {
+  background-image: url("../img/logotypes2.png");
+}
+
+.go-pro {
+  background-image: url("../img/logotypes3.png");
+}
+
+.vivi {
+  background-image: url("../img/logotypes4.png");
+}
+
 .button {
   font-size: 18px;
   font-weight: 800;
@@ -140,6 +195,7 @@ li {
   letter-spacing: 0.2em;
   border: 0;
   background: transparent;
+  outline: none;
 }
 
 .sub-title {
@@ -227,6 +283,11 @@ li {
   font-size: 14px;
   line-height: 19px;
   border: 0;
+  outline: none;
+}
+
+.button-sort-item {
+  outline: none;
 }
 
 .hover-price {
@@ -264,6 +325,7 @@ li {
   letter-spacing: 0.1em;
   border: 0;
   background: transparent;
+  outline: none;
 }
 
 .nav-list-link-page1 {
@@ -279,4 +341,27 @@ li {
   opacity: 0.3;
 }
 
+.hover-img-link {
+  width: 360px;
+  height: 380px;
+}
 
+.self-stick {
+  background-image: url("../img/hover1.png");
+}
+
+.pro-self-stick {
+  background-image: url("../img/hover2.png");
+}
+
+.unsinkable-self-stick {
+  background-image: url("../img/hover3.png");
+}
+
+.follow-me-img {
+  background-image: url("../img/hover4.png");
+}
+
+.hover-item-img {
+  margin: 29px 271px 289px;
+}

@@ -14,6 +14,7 @@
   --header-color: var(--special-yellow);
 }
 
+
 body {
   min-width: 1160px;
   font-family: "Gilroy", Arial, sans-serif;
@@ -33,11 +34,38 @@ li {
   list-style-type: none;
 }
 
-.header {
-  background-color: var(--header-color);
-  width: 1160px;
-  margin: 20px auto 0;
+.page {
+  height: 100%;
 }
+
+.body-page {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.header {
+  width: 1160px;
+  margin: 40px auto 0;
+  background-color: var(--header-color);
+}
+
+.header-catalog-menu {
+  list-style: none;
+}
+
+.haeder-menu {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+
+}
+
+.header-logo-img {
+  margin: -20px 60px 0;
+}
+
 
 .search-form {
   color: var(--serch-form-rgba);
@@ -50,11 +78,6 @@ li {
   outline: none;
 }
 
-.header-menu {
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-}
 
 .header-catalog-menu-link {
   font-family: "Open Sans", sans-serif;
@@ -78,6 +101,12 @@ li {
   font-size: 18px;
 }
 
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .popular-img {
   width: 160px;
   height: 160px;
@@ -86,28 +115,60 @@ li {
   background-position: center;
 }
 
-.vr-img {
-  background-image: url("../img/popular1.svg");
+.slider-product-item-page1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 127px;
+  margin: 0;
+  padding: 0 89px 0 47px;
 }
 
-.mn-for-self {
-  background-image: url("../img/popular2.svg");
+.slider-product-img-container1 {
+  width: 384px;
+  height: 486px;
 }
 
-.act-cam {
-  background-image: url("../img/popular3.svg");
+.slider-product-text-container1 {
+  width: 500px;
+  height: 464px;
 }
 
-.fit-brac {
-  background-image: url("../img/popular4.svg");
+.slider-product-item-page2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 139px;
+  margin: 0;
+  padding: 43px 116px 0 60px;
 }
 
-.smart-cl {
-  background-image: url("../img/popular5.svg");
+.slider-product-img-container2 {
+  width: 345px;
+  height: 485px;
 }
 
-.quadcopter {
-  background-image: url("../img/popular6.svg");
+.slider-product-text-container2 {
+  width: 500px;
+  height: 463px;
+}
+
+.slider-product-item-page3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin: 0;
+  padding: 0 30px 0 47px;
+}
+
+.slider-product-img-container3 {
+  width: 526px;
+  height: 334px;
+  padding: 99px 30px 93px 0;
+}
+
+.slider-product-text-container3 {
+  width: 502px;
+  height: 463px;
+  padding: 43px 0 20px 58px;
 }
 
 .slider-product {
@@ -139,8 +200,41 @@ li {
   letter-spacing: 0.1em;
 }
 
-.services {
-  background-color: var(--basic-grey-light);
+.popular-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 40px;
+  margin: 0;
+  padding: 99px 40px 64px 40px;
+  list-style: none;
+}
+
+.popular-item {
+  width: 160px;
+}
+
+.vr-img {
+  background-image: url("../img/popular1.svg");
+}
+
+.mn-for-self {
+  background-image: url("../img/popular2.svg");
+}
+
+.act-cam {
+  background-image: url("../img/popular3.svg");
+}
+
+.fit-brac {
+  background-image: url("../img/popular4.svg");
+}
+
+.smart-cl {
+  background-image: url("../img/popular5.svg");
+}
+
+.quadcopter {
+  background-image: url("../img/popular6.svg");
 }
 
 .slider-services-button {
@@ -155,6 +249,7 @@ li {
 }
 
 .popular-img {
+  margin-bottom: 38px;
   width: 160px;
   height: 160px;
 }
@@ -169,6 +264,15 @@ li {
 .partners-img {
   width: 260px;
   height: 100px;
+}
+
+.partners-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+  margin: 0;
+  padding: 90px 40px 90px 40px;
+  list-style: none;
 }
 
 .dji {
@@ -198,6 +302,10 @@ li {
   outline: none;
 }
 
+.services {
+  background-color: var(--basic-grey-light);
+}
+
 .sub-title {
   font-size: 47px;
   line-height: 58px;
@@ -208,6 +316,29 @@ li {
   font-size: 16px;
   line-height: 28px;
   font-weight: 800;
+}
+
+.grid-info-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 127px;
+  width: 1240px;
+  height: 580px;
+  margin: auto;
+}
+
+.about {
+  width: 473px;
+  height: 580px;
+}
+
+.contacts {
+  width: 560px;
+  height: 580px;
+}
+
+.indent {
+  padding-top: 40px;
 }
 
 .footer {

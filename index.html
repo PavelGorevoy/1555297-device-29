@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
@@ -9,26 +9,26 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="body-page">
 <header class="header">
   <a class="header-logo" href="index.html">
-    <img src="img/e-logo.svg" width="163,3" height="34.96" alt="Логотип магазина «Device»">
+    <img class="header-logo-img" src="img/e-logo.svg" width="163" height="35" alt="Логотип магазина «Device»">
   </a>
   <div class="haeder-menu">
     <div>
-      <img src="img/search.svg" width="12,47" height="12,47">
+      <img src="img/search.svg" width="12" height="12">
       <input class="search-form text-sign" type="search" placeholder="Поиск по сайту">
     </div>
     <a class="menu-link text-sign" href="blank.html">
-      <img src="img/user.svg" width="12,47" height="12,47">
+      <img src="img/user.svg" width="12" height="12">
       Войти
     </a>
     <a class="menu-link text-sign" href="#">
-      <img src="img/chart.svg" width="12,47" height="12,47">
+      <img src="img/chart.svg" width="12" height="12">
       Сравнить
     </a>
     <a class="menu-link text-sign" href="#">
-      <img src="img/trash.svg" width="12,47" height="12,47">
+      <img src="img/trash.svg" width="12" height="12">
       Корзина
     </a>
   </div>
@@ -36,7 +36,7 @@
     <ul class="nav-header-list">
       <li>
         <a class="nav-header-list-link nav-heder-list-link-catalog" href="catalog.html">Каталог товаров</a>
-        <input class="plus-image" type="image" src="img/plus.svg" width="15,4" height="15,4" name="plus">
+        <input class="plus-image" type="image" src="img/plus.svg" width="15" height="15" name="plus">
         <ul class="header-catalog-menu">
           <li><a href="#" class="header-catalog-menu-link">Виртуальная реальность</a></li>
           <li><a href="catalog.html" class="header-catalog-menu-link">Моноподы для селфи</a></li>
@@ -52,17 +52,20 @@
     </ul>
   </nav>
 </header>
-<main class="main">
+<main class="container">
   <h1 class="title">Магазин Device</h1>
   <section class="slider-product">
     <h2 class="title">Информация о товаре</h2>
     <ul class="slider-prodect-item">
-      <li class="slider-product-item-page">
+      <li class="slider-product-item-page1">
+        <div class="slider-product-img-container1">
         <img class="slider-product-img" src="img/slider-1-1.png" width="384" height="486" alt="Тринога">
-        <span class="slider-product-title sub-title">Делай селфи, как&nbsp;Бен Стиллер!</span>
+        </div>
+        <div class="slider-product-text-container1">
+        <span class="slider-product-title sub-title">Делай селфи, как&nbspБен&nbspСтиллер!</span>
         <p class="text-sign">
           Самая длинная палка для селфи доступна в нашем магазине.
-          Восемь (Восемь, Карл!) метров длинной и весом всего 5 киллограмм.
+          Восемь&nbsp(Восемь, Карл!) метров длинной и весом всего 5 киллограмм.
         </p>
         <a class="slider-product-link button" href="">ПОДРОБНЕЕ</a>
         <input class="slider-product-toggle" type="radio" name="slider"><!--Кнопки слайдера-->
@@ -80,9 +83,13 @@
             <td class="slider-product-table-spec">Карбон</td>
           </tr>
         </table>
+        </div>
       </li>
-      <li class="slider-product-item-page">
+      <li class="slider-product-item-page2">
+        <div class="slider-product-img-container2">
         <img class="slider-product-img" src="img/slider-2-1.png" width="384" height="486" alt="Фитнес браслет">
+        </div>
+        <div class="slider-product-text-container2">
         <span class="slider-product-title sub-title">Худеем правильно!</span>
         <p class="text-sign">
           Мотивирующие фитнес-браслеты помогут найти в себе
@@ -100,9 +107,13 @@
             <td class="slider-product-table-spec">48 часов</td>
           </tr>
         </table>
+        </div>
       </li>
-      <li class="slider-product-item-page">
+      <li class="slider-product-item-page3">
+        <div class="slider-product-img-container3">
         <img class="slider-product-img" src="img/slider-3-1.png" width="526" height="334" alt="Квадрокоптер">
+        </div>
+        <div class="slider-product-text-container3">
         <span class="slider-product-title sub-title">Пархает как бабочка, жалит как пчела!</span>
         <p class="text-sign">
           Этот обычный, на первый взгляд, квадрокоптер оснащен
@@ -122,6 +133,7 @@
             <td class="slider-product-table-spec">50 м</td>
           </tr>
         </table>
+        </div>
       </li>
     </ul>
   </section>
@@ -156,7 +168,7 @@
         <a href="#">
           <div>
           <div class="popular-img fit-brac"></div>
-          <span class="list-popular-text">Фитнес-браслеты</span>
+          <span class="list-popular-text">Фитнес- браслеты</span>
           </div>
         </a>
       </li>
@@ -238,13 +250,14 @@
       </li>
     </ul>
   </section>
+  <div class="grid-info-contact">
   <section class="about">
     <h2 class="sub-title">О нас</h2>
     <p class="text-sign">
       Огромный выбор гаджтов не оставит равнодушным гика,
       который есть в каждом из нас.
     </p>
-    <p class="text-sign">
+    <p class="text-sign indent">
       Мы можем доставить ваш товар в самые отдаленные точки
       России! DEVICE работает со многими транспортными компаниями:
     </p>
@@ -264,22 +277,23 @@
     <!-- Здесь будет карта -->
     <button class="button " type="button" name="write-us">НАПИШИТЕ НАМ</button>
   </section>
+  </div>
 </main>
 <footer class="footer">
   <a class="footer-img-logo" href="index.html">
-    <img src="img/e-footer-logo.svg" width="163,3" height="34.96" alt="Логотип магазина «Device»">
+    <img src="img/e-footer-logo.svg" width="163" height="35" alt="Логотип магазина «Device»">
   </a>
   <div class="footer-link text-sign">
     <a class="footer-link-item" href="blank.html">
-      <img src="img/footeruser.svg" width="12,47" height="12,47">
+      <img src="img/footeruser.svg" width="12" height="12">
       Войти
     </a>
     <a class="footer-link-item" href="#">
-      <img src="img/footerchart.svg" width="12,47" height="12,47">
+      <img src="img/footerchart.svg" width="12" height="12">
       Сравнить
     </a>
     <a class="footer-link-item" href="#">
-      <img src="img/footertrash.svg" width="12,47" height="12,47">
+      <img src="img/footertrash.svg" width="12" height="12">
       Корзина
     </a>
   </div>
@@ -319,7 +333,7 @@
       </a>
     </li>
   </ul>
-  <a class="footer-academy-logo" href="#">
+  <a class="footer-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
     <img src="img/logohtml.svg" width="27" height="34" alt="Логотип HTMLAcademy">
   </a>
 </footer>

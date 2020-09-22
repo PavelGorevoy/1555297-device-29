@@ -51,15 +51,24 @@ li {
   background-color: var(--header-color);
 }
 
+.header-cont {
+  display: grid;
+  grid-template-rows: 86px 86px;
+  margin: 0;
+  padding: 0;
+}
+
+
 .header-catalog-menu {
-  list-style: none;
+  display: none; /*временная заглушка до флексов*/
 }
 
 .haeder-menu {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: normal;
-
 }
 
 .header-logo-img {
@@ -97,14 +106,17 @@ li {
   letter-spacing: 0.1em;
 }
 
-.nav-header {
+.nav-header-list {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
   font-size: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   width: 1240px;
   margin: 0 auto;
-  padding: 0;
 }
 
 .popular-img {
@@ -115,7 +127,12 @@ li {
   background-position: center;
 }
 
-.slider-product-item-page1 {
+.slider-prodect-item {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-product-list-page1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 127px;
@@ -133,7 +150,7 @@ li {
   height: 464px;
 }
 
-.slider-product-item-page2 {
+.slider-product-list-page2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 139px;
@@ -151,10 +168,9 @@ li {
   height: 463px;
 }
 
-.slider-product-item-page3 {
+.slider-product-list-page3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   margin: 0;
   padding: 0 30px 0 47px;
 }
@@ -237,6 +253,11 @@ li {
   background-image: url("../img/popular6.svg");
 }
 
+.slider-services {
+  margin: 0;
+  padding: 0;
+}
+
 .slider-services-button {
   border: 0;
   background: transparent;
@@ -302,7 +323,7 @@ li {
   outline: none;
 }
 
-.services {
+.section-wrapper {
   background-color: var(--basic-grey-light);
 }
 

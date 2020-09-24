@@ -20,8 +20,9 @@
         <img src="img/search.svg" width="12" height="12">
         <input class="search-form text-sign" type="search" placeholder="Поиск по сайту">
       </div>
-      <a class="menu-link text-sign" href="blank.html">
+      <a class="menu-link text-sign" href="#">
         <img src="img/user.svg" width="12" height="12">
+        Валентин Петухов
         Войти
       </a>
       <a class="menu-link text-sign" href="#">
@@ -67,16 +68,25 @@
       <a class="bread-crumbs-list-link">Моноподы для селфи</a>
     </li>
   </ul>
+  <div class="container-catalog container">
   <section class="section-filter">
-    <h2 class="title-filter">Фильтр</h2>
+    <div class="filter-size">
+    <h2 class="title-filter">Фильтр:</h2>
+    </div>
+    <div class="filter-forms">
     <!-- Здесь будет форма фильтра -->
+    </div>
   </section>
   <section class="section-sorting">
     <div class="sorting-button">
       <h2 class="title-sorting">СОРТИРОВКА:</h2>
       <div class="sorting-button-link">
         <button class="button-sorting-item" type="button">По цене</button>
+      </div>
+      <div class="sorting-button-link">
         <button class="button-sorting-item" type="button">По типу</button>
+      </div>
+      <div class="sorting-button-link">
         <button class="button-sorting-item" type="button">По популярности</button>
       </div>
       <div class="button-sort">
@@ -89,12 +99,12 @@
     <div class="hover">
       <ul class="hover-list">
         <li class="hover-item">
+          <p>
+            <img src="img/hover1.png" width="360" height="380">
+          </p>
           <a href="#">
             <h3 class="hover-titel">Любительская селфи-палка</h3>
             <span class="hover-price">500 руб.</span>
-            <p>
-            <div class="hover-img-link self-stick"></div>
-            </p>
           </a>
           <div>
             <button class="button" type="button" name="trash">В корзину</button>
@@ -102,12 +112,12 @@
           </div>
         </li>
         <li class="hover-item">
+          <p>
+            <img src="img/hover2.png" width="360" height="380">
+          </p>
           <a href="#">
             <h3 class="hover-titel">Профессиональная селфи-палка</h3>
             <span class="hover-price">1 500 руб.</span>
-            <p>
-            <div class="hover-img-link pro-self-stick"></div>
-            </p>
           </a>
           <div>
             <button class="button" type="button" name="trash">В корзину</button>
@@ -115,12 +125,12 @@
           </div>
         </li>
         <li class="hover-item">
+            <p>
+              <img src="img/hover3.png" width="360" height="380">
+            </p>
           <a href="#">
             <h3 class="hover-titel">Непотопляемая селфи-палка</h3>
             <span class="hover-price">2 500 руб.</span>
-            <p>
-            <div class="hover-img-link unsinkable-self-stick"></div>
-            </p>
           </a>
           <div>
             <button class="button" type="button" name="trash">В корзину</button>
@@ -128,14 +138,12 @@
           </div>
         </li>
         <li class="hover-item">
+            <p>
+              <img src="img/hover4.png" width="360" height="380">
+            </p>
           <a href="#">
             <h3 class="hover-titel">Селфи-палка «Следуй за мной»</h3>
             <span class="hover-price">4 900 руб.</span>
-            <p>
-            <div class="hover-img-link follow-me-img">
-              <img class="hover-item-img" src="img/hover-item-img.svg" width="62" height="62">
-            </div>
-            </p>
           </a>
           <div>
             <button class="button" type="button" name="trash">В корзину</button>
@@ -160,6 +168,7 @@
       <button class="rectangle-button" type="button">Вперед</button>
     </div>
   </section>
+  </div>
 </main>
 <footer class="footer">
   <div class="container">

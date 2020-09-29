@@ -77,10 +77,6 @@ li {
   margin-right: auto;
 }
 
-.nav-header-list {
-
-}
-
 .header-catalog-menu {
   display: none; /*временная заглушка до флексов*/
 }
@@ -118,7 +114,7 @@ li {
 .header-logo-img {
   padding: 0;
   margin: -20px 60px 0;
-  transition: 1s;
+  transition: opacity .2s;
 }
 
 .header-logo-img:hover {
@@ -244,8 +240,13 @@ li {
 .slider-button-link {
   display: flex;
   align-content: stretch;
+  align-items: baseline;
   padding: 0;
   margin: 0;
+}
+
+.toggle-left {
+  margin-left: 180px;
 }
 
 .slider-product-title {
@@ -395,7 +396,7 @@ slider-services-image {
   margin-bottom: 38px;
   width: 160px;
   height: 160px;
-  transition: background-color 500ms;
+  transition: background-color .2s;
 }
 
 .popular-img:hover {
@@ -424,7 +425,7 @@ slider-services-image {
 
 .dji {
   background-image: url("../img/logotypes1.png");
-  transition: 1s;
+  transition: background-image .2s;
 }
 
 .dji:hover {
@@ -433,7 +434,7 @@ slider-services-image {
 
 .sp_adgets {
   background-image: url("../img/logotypes2.png");
-  transition: 1s;
+  transition: background-image .2s;
 }
 
 .sp_adgets:hover {
@@ -442,7 +443,7 @@ slider-services-image {
 
 .go-pro {
   background-image: url("../img/logotypes3.png");
-  transition: 1s;
+  transition: background-image .2s;
 }
 
 .go-pro:hover {
@@ -451,7 +452,7 @@ slider-services-image {
 
 .vivi {
   background-image: url("../img/logotypes4.png");
-  transition: 1s;
+  transition: background-image .2s;
 }
 
 .vivi:hover {
@@ -468,7 +469,7 @@ slider-services-image {
   background: url("../img/rectangle.svg") no-repeat;
   background-position: center;
   background-size: 100%;
-  transition: background-color 1s;
+  transition: background-color .2s;
   outline: none;
   background-color: initial;
 }
@@ -581,8 +582,8 @@ slider-services-image {
 .bread-crumbs {
   display: flex;
   width: 385px;
-  margin: 0 0 50px 100px;
-  padding-left: 30px;
+  margin: 0;
+  padding: 0 0 50px 30px;
 }
 
 .bread-crumbs-list-link {
@@ -602,8 +603,8 @@ slider-services-image {
 
 .sorting-button {
   display: flex;
-  height: 70px;
   background-color: var(--basic-grey-light);
+  margin: 25px 0 25px 72px;
 }
 
 .button-vector {
@@ -619,17 +620,14 @@ slider-services-image {
   margin: 0;
 }
 
-.section-filter {
-  background-color: var(--filter-color);
-}
-
 .title-filter {
-  text-align: center;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  margin: 0;
+  padding: 25px 0 25px 30px;
 }
 
 .button-sorting-item {
@@ -653,10 +651,6 @@ slider-services-image {
   padding-top: 44px;
   padding-left: 60px;
   padding-bottom: 30px;
-}
-
-.hover {
-
 }
 
 .hover-price {
@@ -731,17 +725,64 @@ slider-services-image {
   opacity: 0.3;
 }
 
-.container-catalog {
-  display: grid;
-  grid-template-columns: 368px 1fr;
-  align-content: start;
-}
-
 .filter-size {
   height: 70px;
+  width: 300px;
+  background-color: var(--filter-color);
 }
 
 .filter-forms {
-
+  width: 300px;;
   background-color: var(--basic-grey-light);
 }
+
+.background-filters {
+  background-image: linear-gradient(to right, var(--filter-color) 0px, var(--filter-color) 29.3%, var(--basic-grey-light) 29.3%, var(--basic-grey-light) 100%);
+}
+
+.filter-flex {
+  display: flex;
+}
+
+.card-item {
+  background-image: linear-gradient(to right, var(--basic-grey-light) 0px, var(--basic-grey-light) 29.3%, var(--basic-white) 29.3%, var(--basic-white) 100%);
+}
+
+.hover-list {
+  margin: 0;
+}
+
+.hover-list p {
+  margin: 0;
+}
+
+.section-sorting {
+  display: flex;
+  flex-direction: row;
+}
+
+.hover-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 760px;
+  margin: 69px 0 0 72px;
+}
+
+.hover-item {
+  width: 360px;
+}
+
+.hover-item:nth-child(2n) {
+  margin-right: 0;
+  padding-bottom: 48px;
+}
+
+.hover-item:nth-child(1) {
+  padding-bottom: 48px;
+}
+
+.hover-item:nth-child(2n) {
+  padding-left: 40px;
+}
+

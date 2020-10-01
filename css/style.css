@@ -528,10 +528,10 @@ slider-services-image {
 }
 
 .footer-cont {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  display: flex;
   margin: 0;
   padding: 0;
+  width: 1160px;
 }
 
 .footer-link-item {
@@ -539,33 +539,95 @@ slider-services-image {
 }
 
 .footer-address {
-  color: var(--basic-white)
+  color: var(--basic-white);
+  height: 20px;
 }
 
-.footer-block {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+.footer-block-first {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-block-second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 138px;
+  margin-left: 156px;
+  margin-right: auto;
+}
+
+.footer-block-third {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-compare {
+
+}
+
+.footer-link {
+  padding-top: 46px;
+  min-width: 325px;
+}
+
+.footer-compare {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-img-logo {
+  padding-top: 64px;
+  padding-bottom: 40px;
+  height: 35px;
+}
+
+.footer-logo-hover {
+  transition: opacity .2s;
+}
+
+.footer-logo-hover:hover {
+  opacity: 0.6;
 }
 
 .footer-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 423px;
 }
 
 .footer-social-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
+  width: 136px;
+  margin: 0;
+  padding: 67px 0 0 0;
 }
 
 .footer-list-item-link {
   color: var(--basic-white);
   letter-spacing: 0.2em;
+  padding: 0;
+  min-width: 111px;
 }
 
 .footer-tel {
   color: var(--basic-white);
+  padding-top: 73px;
+}
+
+.footer-academy-logo {
+  padding-top: 67px;
 }
 
 .form-about {
@@ -605,6 +667,19 @@ slider-services-image {
   display: flex;
   background-color: var(--basic-grey-light);
   margin: 25px 0 25px 72px;
+  width: 760px;
+}
+
+.sorting {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+.indents-sorting-item {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .button-vector {
@@ -636,6 +711,7 @@ slider-services-image {
   font-size: 14px;
   line-height: 19px;
   border: 0;
+  padding: 0;
   background-color: var(--basic-grey-light);
   outline: none;
 }
@@ -737,6 +813,7 @@ slider-services-image {
 }
 
 .background-filters {
+  height: 70px;
   background-image: linear-gradient(to right, var(--filter-color) 0px, var(--filter-color) 29.3%, var(--basic-grey-light) 29.3%, var(--basic-grey-light) 100%);
 }
 

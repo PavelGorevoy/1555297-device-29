@@ -16,20 +16,23 @@
   </a>
   <div class="haeder-menu">
     <div class="search-form">
-      <img src="img/search.svg" width="12" height="12">
+      <img src="img/search.svg" width="12" height="12" alt="">
       <input class="search-form-item text-sign" type="search" placeholder="Поиск по сайту">
     </div>
     <div class="menu-list">
       <a class="menu-link user-come text-sign" href="blank.html">
-        <img class="header-link-input-pudding" src="img/user.svg" width="12" height="12">
-        Войти
+        <div class="user">
+          <img class="header-link-input-pudding" src="img/user.svg" width="8" height="9" alt="">
+          <div></div>
+          <div>Войти</div>
+        </div>
       </a>
       <a class="menu-link compare text-sign" href="#">
-        <img class="header-link-pudding" src="img/chart.svg" width="12" height="12">
+        <img class="header-link-pudding" src="img/chart.svg" width="8" height="8" alt="">
         Сравнить
       </a>
       <a class="menu-link trash text-sign" href="#">
-        <img class="header-link-pudding" src="img/trash.svg" width="12" height="12">
+        <img class="header-link-pudding" src="img/trash.svg" width="10" height="10" alt="">
         Корзина
       </a>
     </div>
@@ -39,7 +42,8 @@
       <div class="navigation-drop-down">
         <div class="hover-drop-down">
           <a class="catalog" href="catalog.html">Каталог товаров</a>
-          <input class="plus-image catalog-item" type="image" src="img/plus.svg" width="15" height="15" name="plus">
+          <input class="plus-image catalog-item" type="image" src="img/plus.svg" width="15" height="15" name="plus"
+                 alt="plus button">
         </div>
       </div>
       <div class="navigation">
@@ -59,9 +63,9 @@
   </ul>
 </header>
 <main>
-  <h1 class="title">Магазин Device</h1>
+  <h1 class="visually-hidden">Магазин Device</h1>
   <section class="slider-product container">
-    <h2 class="title">Информация о товаре</h2>
+    <h2 class="visually-hidden">Информация о товаре</h2>
     <ul class="slider-prodect-item">
       <li class="slider-product-list-page1">
         <div class="slider-product-img-container1">
@@ -69,11 +73,12 @@
         </div>
         <div class="slider-product-text-container1 slider-product-background-img-1">
           <div class="slider-product-title">
-            <span class="sub-title">Делай селфи, как&nbspБен&nbspСтиллер!</span>
+            <span class="sub-title">Делай селфи, <br>
+              как Бен Стиллер!</span>
           </div>
           <p class="text-sign text-indents">
-            Самая длинная палка для селфи доступна в нашем магазине.
-            Восемь&nbsp(Восемь, Карл!) метров длинной и весом всего 5 киллограмм.
+            Самая длинная палка для селфи доступна в нашем магазине. <br>
+            Восемь (Восемь, Карл!) метров длинной и весом всего 5 киллограмм.
           </p>
           <div class="slider-button-link">
             <a class="slider-product-link button" href="#">ПОДРОБНЕЕ</a>
@@ -109,7 +114,7 @@
       </li>
       <li class="slider-product-list-page2" style="display: none">
         <div class="slider-product-img-container2">
-          <img class="slider-product-img" src="img/slider-2-1.png" width="384" height="486" alt="Фитнес браслет">
+          <img class="slider-product-img" src="img/slider-2-1.png" width="345" height="485" alt="Фитнес браслет">
         </div>
         <div class="slider-product-text-container2 slider-product-background-img-2">
           <div class="slider-product-title">
@@ -193,7 +198,7 @@
     </ul>
   </section>
   <section class="popular container">
-    <h2 class="title">Ссылки на товары</h2>
+    <h2 class="visually-hidden">Ссылки на товары</h2>
     <ul class="popular-list">
       <li class="popular-item">
         <a href="#">
@@ -379,11 +384,11 @@
   </section>
   <section class="services">
     <div class="container">
-      <h2 class="title">Наши преймущества</h2>
+      <h2 class="visually-hidden">Наши преймущества</h2>
       <div class="slider-services">
-        <div class="slider-services-item">
+        <div class="slider-services-item"> <!--first slide services-->
           <div class="slider-button">
-            <button class="slider-services-button slider-button-first" type="button" name="delivery">ДОСТАВКА</button>
+            <button class="checked-slider-button-first slider-button-first" type="button" name="delivery">ДОСТАВКА</button>
             <button class="slider-services-button slider-button-second" type="button" name="guarantee">ГАРАНТИЯ</button>
             <button class="slider-services-button slider-button-third" type="button" name="credit">КРЕДИТ</button>
           </div>
@@ -397,15 +402,15 @@
               </p>
             </div>
             <div class="slider-services-image">
-              <img src="img/delivery.svg" height="164" width="136">
+              <img src="img/delivery.svg" height="164" width="136" alt="">
             </div>
           </div>
         </div>
-        <div class="slider-services-item" style="display: none">
+        <div class="slider-services-item" style="display: none"> <!--second slide services-->
           <div class="slider-button">
-            <button class="button slider-services-button slider-button-first" type="button" name="delivery">ДОСТАВКА</button>
-            <button class="button slider-services-button slider-button-second" type="button" name="guarantee">ГАРАНТИЯ</button>
-            <button class="button slider-services-button slider-button-third" type="button" name="credit">КРЕДИТ</button>
+            <button class="slider-services-button slider-button-first" type="button" name="delivery">ДОСТАВКА</button>
+            <button class="checked-slider-button-second slider-button-second" type="button" name="guarantee">ГАРАНТИЯ</button>
+            <button class="slider-services-button slider-button-third" type="button" name="credit">КРЕДИТ</button>
           </div>
           <div class="slider-services-slid">
             <div class="slider-services-text">
@@ -417,15 +422,15 @@
               </p>
             </div>
             <div class="slider-services-image">
-              <img src="img/warranty.svg" height="195" width="171">
+              <img src="img/warranty.svg" height="195" width="171" alt="">
             </div>
           </div>
         </div>
-        <div class="slider-services-item" style="display: none">
+        <div class="slider-services-item" style="display: none"> <!--third slide services-->
           <div class="slider-button">
-            <button class="button slider-services-button slider-button-first" type="button" name="delivery">ДОСТАВКА</button>
-            <button class="button slider-services-button slider-button-second" type="button" name="guarantee">ГАРАНТИЯ</button>
-            <button class="button slider-services-button slider-button-third" type="button" name="credit">КРЕДИТ</button>
+            <button class="slider-services-button slider-button-first" type="button" name="delivery">ДОСТАВКА</button>
+            <button class="slider-services-button slider-button-second" type="button" name="guarantee">ГАРАНТИЯ</button>
+            <button class="checked-slider-button-third slider-button-third" type="button" name="credit">КРЕДИТ</button>
           </div>
           <div class="slider-services-slid">
             <div class="slider-services-text">
@@ -437,7 +442,7 @@
               </p>
             </div>
             <div class="slider-services-image">
-              <img src="img/creddit.svg" height="188" width="156">
+              <img src="img/creddit.svg" height="188" width="156" alt="">
             </div>
           </div>
         </div>
@@ -445,7 +450,7 @@
     </div>
   </section>
   <section class="partners container">
-    <h2 class="title">Наши партнеры</h2>
+    <h2 class="visually-hidden">Наши партнеры</h2>
     <ul class="partners-list">
       <li class="partners-list-item">
         <a href="#">
@@ -472,11 +477,11 @@
   <div class="info container">
     <section class="about">
       <h2 class="sub-title about-title">О нас</h2>
-      <p class="text-sign">
+      <p class="text-sign line-height-about">
         Огромный выбор гаджтов не оставит равнодушным гика,
         который есть в каждом из нас.
       </p>
-      <p class="text-sign indent">
+      <p class="text-sign indent line-height-about">
         Мы можем доставить ваш товар в самые отдаленные точки
         России! DEVICE работает со многими транспортными компаниями:
       </p>
@@ -489,7 +494,7 @@
     </section>
     <section class="contacts">
       <h2 class="sub-title about-title">Контакты</h2>
-      <p class="text-sign">
+      <p class="text-sign line-height-about">
         Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
         проверить работоспособность покупки. Всякое бывает.
       </p>
@@ -501,16 +506,33 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-cont">
+      <a class="footer-img-logo" href="index.html">
+        <img class="footer-logo-hover" src="img/e-footer-logo.svg" width="163" height="35"
+             alt="Логотип магазина «Device»">
+      </a>
       <div class="footer-block-first">
-        <a class="footer-img-logo" href="index.html">
-          <img class="footer-logo-hover" src="img/e-footer-logo.svg" width="163" height="35"
-               alt="Логотип магазина «Device»">
-        </a>
-        <span class="footer-address text-sign">
-      г. Москва, ул. Строителей,15
-    </span>
+        <div class="footer-link text-sign">
+          <a class="footer-link-item user-footer" href="blank.html">
+            <div class="user">
+              <img class="user-footer-img" src="img/footeruser.svg" width="8" height="9" alt="">
+              <div></div>
+              <div>Войти</div>
+            </div>
+          </a>
+          <a class="footer-link-item footer-compare" href="#">
+            <img class="footer-compare-img" src="img/footerchart.svg" width="8" height="8" alt="">
+            Сравнить
+          </a>
+          <a class="footer-link-item trash-footer" href="#">
+            <img class="trash-footer-img" src="img/footertrash.svg" width="10" height="10" alt="">
+            Корзина
+          </a>
+        </div>
       </div>
       <div class="footer-block-second">
+         <span class="footer-address text-sign">
+      г. Москва, ул. Строителей,15
+    </span>
         <nav class="footer-nav">
           <ul class="footer-list">
             <li class="footer-list-item">
@@ -524,6 +546,11 @@
             </li>
           </ul>
         </nav>
+        <div class="footer-tel text-sign">
+          Тел.:<a class="footer-tel" href="tel:+74954959595">+7 (495) 495-95-95</a>
+        </div>
+      </div>
+      <div class="footer-block-third">
         <ul class="footer-social-list">
           <li>
             <a class="footer-social-list-link" href="#">
@@ -641,25 +668,6 @@
             </a>
           </li>
         </ul>
-      </div>
-      <div class="footer-block-third">
-        <div class="footer-link text-sign">
-          <a class="footer-link-item user-footer" href="blank.html">
-            <img class="user-footer-img" src="img/footeruser.svg" width="12" height="12">
-            Войти
-          </a>
-          <a class="footer-link-item footer-compare" href="#">
-            <img class="footer-compare-img" src="img/footerchart.svg" width="12" height="12">
-            Сравнить
-          </a>
-          <a class="footer-link-item trash-footer" href="#">
-            <img class="trash-footer-img" src="img/footertrash.svg" width="12" height="12">
-            Корзина
-          </a>
-        </div>
-        <div class="footer-tel text-sign">
-          Тел.:<a class="footer-tel" href="tel:+74954959595">+7 (495) 495-95-95</a>
-        </div>
         <a class="footer-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logohtml.svg" width="27" height="34" alt="Логотип HTMLAcademy">
         </a>
@@ -667,28 +675,28 @@
     </div>
   </div>
 </footer>
-<section class="modal modal-map">
-  <h2 class="title">Как до нас добраться</h2>
+<section class="modal modal-map" style="display: none">
+  <h2 class="visually-hidden">Как до нас добраться</h2>
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473727!2d37.52742931613349!3d55.687034004529714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1601979689429!5m2!1sru!2sru"
-    width="996" height="593" frameborder="0" style="border:0;" allowfullscreen=""
+    width="959" height="559" style="border:0;" allowfullscreen=""
     aria-hidden="false" tabindex="0"></iframe>
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
-<section class="modal modal-write">
-  <h2 class="title">Напишите нам</h2>
+<section class="modal modal-write" style="display: none">
+  <h2 class="visually-hidden">Напишите нам</h2>
   <ul class="style-form-write">
     <li>
-      <label>Ваше имя:</label>
+      <label class="modal-title">Ваше имя:</label>
       <input class="name-form" type="text" name="first-second-name" placeholder="Имя Фамилия">
     </li>
     <li class="padding-form-email">
-      <label>Ваш e-mail:</label>
+      <label class="modal-title">Ваш e-mail:</label>
       <input class="name-form" type="email" name="email" required placeholder="email@example.com">
     </li>
     <li class="text-form">
       <form class="text-modal-stile" method="post">
-        <label for="note">Текст письма:</label>
+        <label class="modal-title" for="note">Текст письма:</label>
         <textarea class="text-form-area" id="note" name="note" rows="9" placeholder="В свободной форме"></textarea>
       </form>
     </li>

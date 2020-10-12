@@ -41,9 +41,9 @@
     <div class="nav-header-list">
       <div class="navigation-drop-down">
         <div class="hover-drop-down">
-          <a class="catalog" href="catalog.html">Каталог товаров</a>
+          <a class="catalog" href="#">Каталог товаров</a>
           <input class="plus-image catalog-item" type="image" src="img/plus.svg" width="15" height="15" name="plus"
-                 alt="plus button">
+                 id="plus-image-catalog" alt="plus button">
         </div>
       </div>
       <div class="navigation">
@@ -52,15 +52,15 @@
         <a class="nav-header-list-link" href="#">Контакты</a>
       </div>
     </div>
+    <ul class="header-catalog-menu visually-hidden">
+      <li class="header-catalog-menu-list-first-line first-block-stile"><a href="#" class="header-catalog-menu-link">Виртуальная реальность</a></li>
+      <li class="header-catalog-menu-list-first-line second-block-stile"><a href="#" class="header-catalog-menu-link">Фитнес-браслеты</a></li>
+      <li class="header-catalog-menu-list-first-line third-block-stile"><a href="#" class="header-catalog-menu-link">Квадракоптер</a></li>
+      <li class="header-catalog-menu-list-second-line first-block-stile"><a href="catalog.html" class="header-catalog-menu-link">Моноподы для селфи</a></li>
+      <li class="header-catalog-menu-list-second-line second-block-stile margin-for-second-block"><a href="#" class="header-catalog-menu-link">Умные часы</a></li>
+      <li class="header-catalog-menu-list-third-line first-block-stile"><a href="#" class="header-catalog-menu-link first-block-stile">Экшн-камеры</a></li>
+    </ul>
   </nav>
-  <ul class="header-catalog-menu" style="display: none">
-    <li><a href="#" class="header-catalog-menu-link vr">Виртуальная реальность</a></li>
-    <li><a href="catalog.html" class="header-catalog-menu-link mon-for-self">Моноподы для селфи</a></li>
-    <li><a href="#" class="header-catalog-menu-link act-cam">Экшн-камеры</a></li>
-    <li><a href="#" class="header-catalog-menu-link fit-br">Фитнес-браслеты</a></li>
-    <li><a href="#" class="header-catalog-menu-link sm-cl">Умные часы</a></li>
-    <li><a href="#" class="header-catalog-menu-link cuadr">Квадракоптеры</a></li>
-  </ul>
 </header>
 <main>
   <h1 class="visually-hidden">Магазин Device</h1>
@@ -112,7 +112,7 @@
           </table>
         </div>
       </li>
-      <li class="slider-product-list-page2" style="display: none">
+      <li class="slider-product-list-page2 visually-hidden">
         <div class="slider-product-img-container2">
           <img class="slider-product-img" src="img/slider-2-1.png" width="345" height="485" alt="Фитнес браслет">
         </div>
@@ -154,7 +154,7 @@
           </table>
         </div>
       </li>
-      <li class="slider-product-list-page3" style="display: none">
+      <li class="slider-product-list-page3 visually-hidden">
         <div class="slider-product-img-container3">
           <img class="slider-product-img" src="img/slider-3-1.png" width="526" height="334" alt="Квадрокоптер">
         </div>
@@ -406,7 +406,7 @@
             </div>
           </div>
         </div>
-        <div class="slider-services-item" style="display: none"> <!--second slide services-->
+        <div class="slider-services-item visually-hidden"> <!--second slide services-->
           <div class="slider-button">
             <button class="slider-services-button slider-button-first" type="button" name="delivery">ДОСТАВКА</button>
             <button class="checked-slider-button-second slider-button-second" type="button" name="guarantee">ГАРАНТИЯ</button>
@@ -426,7 +426,7 @@
             </div>
           </div>
         </div>
-        <div class="slider-services-item" style="display: none"> <!--third slide services-->
+        <div class="slider-services-item visually-hidden">
           <div class="slider-button">
             <button class="slider-services-button slider-button-first" type="button" name="delivery">ДОСТАВКА</button>
             <button class="slider-services-button slider-button-second" type="button" name="guarantee">ГАРАНТИЯ</button>
@@ -490,7 +490,7 @@
         <li class="about-list-text-item">Авторейдинг</li>
         <li class="about-list-text-item">ЖелДорЭкспедиция</li>
       </ul>
-      <button class="button-about button-about" type="button">ПОДРОБНЕЕ О НАС</button>
+      <button class="button-about" type="button">ПОДРОБНЕЕ О НАС</button>
     </section>
     <section class="contacts">
       <h2 class="sub-title about-title">Контакты</h2>
@@ -498,8 +498,10 @@
         Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
         проверить работоспособность покупки. Всякое бывает.
       </p>
+      <a class="map-pop-up" href="#">
       <div class="map"></div>
-      <button class="button-about" type="button" name="write-us">НАПИШИТЕ НАМ</button>
+      </a>
+      <button class="button-about" type="button" name="write-us" id="write-us">НАПИШИТЕ НАМ</button>
     </section>
   </div>
 </main>
@@ -675,7 +677,7 @@
     </div>
   </div>
 </footer>
-<section class="modal modal-map" style="display: none">
+<section class="modal modal-map visually-hidden">
   <h2 class="visually-hidden">Как до нас добраться</h2>
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473727!2d37.52742931613349!3d55.687034004529714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1601979689429!5m2!1sru!2sru"
@@ -683,7 +685,7 @@
     aria-hidden="false" tabindex="0"></iframe>
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
-<section class="modal modal-write" style="display: none">
+<section class="modal modal-write visually-hidden">
   <h2 class="visually-hidden">Напишите нам</h2>
   <ul class="style-form-write">
     <li>
@@ -702,7 +704,8 @@
     </li>
   </ul>
   <button class="modal-button" type="submit" name="trash">Отправить</button>
-  <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  <button class="modal-close" type="button" aria-label="Закрыть" id="close-write-us"></button>
 </section>
+<script src="js/script.js"></script>
 </body>
 </html>

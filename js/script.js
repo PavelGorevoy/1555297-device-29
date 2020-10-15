@@ -3,93 +3,113 @@ const menuButton = document.querySelector('.plus-image');
 const firstSlide = document.querySelector('.slider-product-list-page1');
 const secondSlide = document.querySelector('.slider-product-list-page2');
 const thirdSlide = document.querySelector('.slider-product-list-page3');
-const firstSlideButton1 = document.getElementById('first-slide');
-const secondSlideButton1 = document.getElementById('second-slide');
-const thirdSlideButton1 = document.getElementById('third-slide');
-const firstSlideButton2 = document.getElementById('first-slide2');
-const secondSlideButton2 = document.getElementById('second-slide2');
-const thirdSlideButton2 = document.getElementById('third-slide2');
-const firstSlideButton3 = document.getElementById('first-slide3');
-const secondSlideButton3 = document.getElementById('second-slide3');
-const thirdSlideButton3 = document.getElementById('third-slide3');
+const firstSlideButton = document.getElementById('first-slide');
+const secondSlideButton = document.getElementById('second-slide');
+const thirdSlideButton = document.getElementById('third-slide');
 const writeUs = document.getElementById('write-us');
 const modalWrite = document.querySelector('.modal-write');
+const modalName = document.querySelector('.name-form');
+const modalEmail = document.querySelector('.email-form');
+const writeForm = document.querySelector('.write-form');
 const modalMap = document.querySelector('.modal-map');
 const map = document.querySelector('.map-pop-up');
 const close = document.querySelector('.modal-close');
 const closeWriteUs = document.getElementById('close-write-us');
+const firstSlideSecond = document.querySelector('.slider-services-item-first');
+const secondSlideSecond = document.querySelector('.slider-services-item-second');
+const thirdSlideSecond = document.querySelector('.slider-services-item-third');
+const firstSlideButtonSecond = document.getElementById('slider-button-first');
+const secondSlideButtonSecond = document.getElementById('slider-button-second');
+const thirdSlideButtonSecond = document.getElementById('slider-button-third');
+
+
+const isStorageSupport = true;
+const storage = '';
+
+try {
+  storage = localStorage.getItem("name");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 menuButton.addEventListener('click', function (evt) {
   evt.preventDefault();
   headerMenu.classList.toggle('visually-hidden');
 });
 
-firstSlideButton1.addEventListener('click', function (evt) {
-  evt.preventDefault();
+firstSlideButton.addEventListener('click', function (evt) {
   firstSlide.classList.remove('visually-hidden');
   secondSlide.classList.add('visually-hidden');
   thirdSlide.classList.add('visually-hidden');
 });
 
-secondSlideButton1.addEventListener('click', function (evt) {
-  evt.preventDefault();
+secondSlideButton.addEventListener('click', function (evt) {
   firstSlide.classList.add('visually-hidden');
   secondSlide.classList.remove('visually-hidden');
   thirdSlide.classList.add('visually-hidden');
 });
 
-thirdSlideButton1.addEventListener('click', function (evt) {
-  evt.preventDefault();
+thirdSlideButton.addEventListener('click', function (evt) {
   firstSlide.classList.add('visually-hidden');
   secondSlide.classList.add('visually-hidden');
   thirdSlide.classList.remove('visually-hidden');
 });
 
-firstSlideButton2.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  firstSlide.classList.remove('visually-hidden');
-  secondSlide.classList.add('visually-hidden');
-  thirdSlide.classList.add('visually-hidden');
+firstSlideButtonSecond.addEventListener('click', function (evt) {
+  firstSlideSecond.classList.remove('visually-hidden');
+  secondSlideSecond.classList.add('visually-hidden');
+  thirdSlideSecond.classList.add('visually-hidden');
+  firstSlideButtonSecond.classList.add('slider-button-first');
+  firstSlideButtonSecond.classList.remove('slider-button-1');
+  firstSlideButtonSecond.classList.remove('slider-services-button');
+  secondSlideButtonSecond.classList.add('slider-button-2');
+  secondSlideButtonSecond.classList.add('slider-services-button');
+  secondSlideButtonSecond.classList.remove('slider-button-second');
+  thirdSlideButtonSecond.classList.add('slider-button-3');
+  thirdSlideButtonSecond.classList.add('slider-services-button');
+  thirdSlideButtonSecond.classList.remove('slider-button-third');
 });
 
-secondSlideButton2.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  firstSlide.classList.add('visually-hidden');
-  secondSlide.classList.remove('visually-hidden');
-  thirdSlide.classList.add('visually-hidden');
+secondSlideButtonSecond.addEventListener('click', function (evt) {
+  firstSlideSecond.classList.add('visually-hidden');
+  secondSlideSecond.classList.remove('visually-hidden');
+  thirdSlideSecond.classList.add('visually-hidden');
+  firstSlideButtonSecond.classList.remove('slider-button-first');
+  firstSlideButtonSecond.classList.add('slider-button-1');
+  firstSlideButtonSecond.classList.add('slider-services-button');
+  secondSlideButtonSecond.classList.remove('slider-button-2');
+  secondSlideButtonSecond.classList.remove('slider-services-button');
+  secondSlideButtonSecond.classList.add('slider-button-second');
+  thirdSlideButtonSecond.classList.add('slider-button-3');
+  thirdSlideButtonSecond.classList.add('slider-services-button');
+  thirdSlideButtonSecond.classList.remove('slider-button-third');
 });
 
-thirdSlideButton2.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  firstSlide.classList.add('visually-hidden');
-  secondSlide.classList.add('visually-hidden');
-  thirdSlide.classList.remove('visually-hidden');
-});
-
-firstSlideButton3.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  firstSlide.classList.remove('visually-hidden');
-  secondSlide.classList.add('visually-hidden');
-  thirdSlide.classList.add('visually-hidden');
-});
-
-secondSlideButton3.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  firstSlide.classList.add('visually-hidden');
-  secondSlide.classList.remove('visually-hidden');
-  thirdSlide.classList.add('visually-hidden');
-});
-
-thirdSlideButton3.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  firstSlide.classList.add('visually-hidden');
-  secondSlide.classList.add('visually-hidden');
-  thirdSlide.classList.remove('visually-hidden');
+thirdSlideButtonSecond.addEventListener('click', function (evt) {
+  firstSlideSecond.classList.add('visually-hidden');
+  secondSlideSecond.classList.add('visually-hidden');
+  thirdSlideSecond.classList.remove('visually-hidden');
+  firstSlideButtonSecond.classList.remove('slider-button-first');
+  firstSlideButtonSecond.classList.add('slider-button-1');
+  firstSlideButtonSecond.classList.add('slider-services-button');
+  secondSlideButtonSecond.classList.add('slider-button-2');
+  secondSlideButtonSecond.classList.add('slider-services-button');
+  secondSlideButtonSecond.classList.remove('slider-button-second');
+  thirdSlideButtonSecond.classList.remove('slider-button-3');
+  thirdSlideButtonSecond.classList.remove('slider-services-button');
+  thirdSlideButtonSecond.classList.add('slider-button-third');
 });
 
 writeUs.addEventListener('click', function (evt) {
   evt.preventDefault();
   modalWrite.classList.remove('visually-hidden');
+
+  if (storage) {
+    modalName.value = storage;
+    modalEmail.focus();
+  } else {
+    modalName.focus();
+  }
 });
 
 map.addEventListener('click', function (evt) {
@@ -105,4 +125,20 @@ close.addEventListener('click', function (evt) {
 closeWriteUs.addEventListener('click', function (evt) {
   evt.preventDefault();
   modalWrite.classList.add('visually-hidden');
+  modalName.classList.remove("modal-error");
+  modalEmail.classList.remove("modal-error");
+});
+
+writeForm.addEventListener("submit", function (evt) {
+  if (!modalName.value || !modalEmail.value) {
+    evt.preventDefault();
+    modalEmail.classList.add("modal-error");
+  }
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    modalWrite.classList.add("visually-hidden");
+    modalMap.classList.add("visually-hidden");
+  }
 });

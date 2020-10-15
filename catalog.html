@@ -3,9 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Catalog</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap"
-        rel="stylesheet">
-  <link href="http://fonts.fontstorage.com/import/gilroy.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,10 +11,13 @@
   <a class="header-logo" href="index.html">
     <img class="header-logo-img" src="img/e-logo.svg" width="163" height="35" alt="Логотип магазина «Device»">
   </a>
-  <div class="haeder-menu">
-    <div class="search-form">
-      <img src="img/search.svg" width="12" height="12" alt="">
-      <input class="search-form-item text-sign" type="search" placeholder="Поиск по сайту">
+  <div class="header-menu">
+    <div>
+      <form class="header-form" action="#" method="get">
+        <label class="hidden-content" for="form-input-search"></label>
+        <input class="form-input-search" type="search"  name="search" id="form-input-search" placeholder="Поиск по сайту">
+        <button class="form-button-search" type="submit" name="search-button">Найти</button>
+      </form>
     </div>
     <div class="menu-list">
       <a class="menu-link user-come text-sign" href="blank.html">
@@ -41,9 +41,9 @@
     <div class="nav-header-list">
       <div class="navigation-drop-down">
         <div class="hover-drop-down">
-          <a class="catalog" href="catalog.html">Каталог товаров</a>
+          <a class="catalog" href="#">Каталог товаров</a>
           <input class="plus-image catalog-item" type="image" src="img/plus.svg" width="15" height="15" name="plus"
-                 alt="plus button">
+                 id="plus-image-catalog" alt="plus button">
         </div>
       </div>
       <div class="navigation">
@@ -96,10 +96,15 @@
           </div>
         </div>
         <div class="button-sort">
-          <input class="button-sort-item" type="image" src="img/icon-up-dir.svg" width="18" height="18"
-                 name="icon-up-dir" alt="up">
-          <input class="button-sort-item" type="image" src="img/icon-down-dir.svg" width="18" height="18"
-                 name="icon-down-dir" alt="down">
+          <button class="button-sort-item" type="button" name="icon-up-dir" alt="up">
+            <svg class="button-sort-item-hover-up" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="1" d="M3 14h11L8.5 4 3 14z" fill="#000"/>
+            </svg>
+          </button>
+          <button class="button-sort-item" type="button" name="icon-down-dir" alt="down">
+            <svg class="button-sort-item-hover" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="1" d="M14 4H3l5.5 10L14 4z" fill="#000"/></svg>
+          </button>
         </div>
       </div>
     </div>
@@ -148,12 +153,12 @@
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="red"
-                       id="filter-red" checked>
+                       id="filter-red" checked disabled>
                 <label class="text-filter-button" for="filter-red">Красный</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pink"
-                       id="filter-pink">
+                       id="filter-pink" disabled>
                 <label class="text-filter-button" for="filter-pink">Розовый</label>
               </li>
             </ul>
@@ -163,7 +168,7 @@
             <ul class="filter-radio-items">
               <li class="filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="bluetooth-group"
-                       value="having" id="filter-have" checked>
+                       value="having" id="filter-have" checked disabled>
                 <label class="text-filter-button" for="filter-have">Есть</label>
               </li>
               <li class="filter-option filter-radio">
@@ -191,7 +196,7 @@
               </div>
               <a href="#">
                 <div class="catalog-item-container">
-                  <h3 class="hover-titel">Любительская селфи-палка</h3>
+                  <h3 class="hover-title">Любительская селфи-палка</h3>
                   <span class="hover-price">1 110 руб.</span>
                 </div>
               </a>
@@ -208,7 +213,7 @@
               </div>
               <a href="#">
                 <div class="catalog-item-container">
-                  <h3 class="hover-titel">Профессиональная селфи-палка</h3>
+                  <h3 class="hover-title">Профессиональная селфи-палка</h3>
                   <span class="hover-price">1 500 руб.</span>
                 </div>
               </a>
@@ -225,14 +230,14 @@
               </div>
               <a href="#">
                 <div class="catalog-item-container">
-                  <h3 class="hover-titel">Непотопляемая селфи-палка</h3>
+                  <h3 class="hover-title">Непотопляемая селфи-палка</h3>
                   <span class="hover-price">1 500 руб.</span>
                 </div>
               </a>
 
             </li>
             <li class="hover-item">
-              <div class="img-position">
+              <div class="img-position marker">
                 <p>
                   <img class="img-hover" src="img/hover4.png" width="360" height="380" alt="">
                 </p>
@@ -243,7 +248,7 @@
               </div>
               <a href="#">
                 <div class="catalog-item-container">
-                  <h3 class="hover-titel">Селфи-палка «Следуй за мной»</h3>
+                  <h3 class="hover-title">Селфи-палка «Следуй за мной»</h3>
                   <span class="hover-price">1 900 руб.</span>
                 </div>
               </a>
@@ -278,7 +283,7 @@
       </a>
       <div class="footer-block-first">
         <div class="footer-link text-sign footer-link-catalog">
-          <a class="footer-link-item user-footer" href="blank.html">
+          <a class="footer-link-item user-footer" href="blank.html" style="opacity: .7">
             <div class="user">
               <img class="user-footer-img" src="img/footeruser.svg" width="8" height="9" alt="">
               <div style="padding-right: 20px">Валентин Петухов</div>

@@ -3,9 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap"
-        rel="stylesheet">
-  <link href="http://fonts.fontstorage.com/import/gilroy.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,10 +11,14 @@
   <a class="header-logo" href="index.html">
     <img class="header-logo-img" src="img/e-logo.svg" width="163" height="35" alt="Логотип магазина «Device»">
   </a>
-  <div class="haeder-menu">
-    <div class="search-form">
-      <img src="img/search.svg" width="12" height="12" alt="">
-      <input class="search-form-item text-sign" type="search" placeholder="Поиск по сайту">
+  <div class="header-menu">
+    <div>
+      <form class="header-form" action="#" method="get">
+        <label class="hidden-content" for="form-input-search"></label>
+        <input class="form-input-search" type="search" name="search" id="form-input-search"
+               placeholder="Поиск по сайту">
+        <button class="form-button-search" type="submit" name="search-button">Найти</button>
+      </form>
     </div>
     <div class="menu-list">
       <a class="menu-link user-come text-sign" href="blank.html">
@@ -53,12 +54,21 @@
       </div>
     </div>
     <ul class="header-catalog-menu visually-hidden">
-      <li class="header-catalog-menu-list-first-line first-block-stile"><a href="#" class="header-catalog-menu-link">Виртуальная реальность</a></li>
-      <li class="header-catalog-menu-list-first-line second-block-stile"><a href="#" class="header-catalog-menu-link">Фитнес-браслеты</a></li>
-      <li class="header-catalog-menu-list-first-line third-block-stile"><a href="#" class="header-catalog-menu-link">Квадракоптер</a></li>
-      <li class="header-catalog-menu-list-second-line first-block-stile"><a href="catalog.html" class="header-catalog-menu-link">Моноподы для селфи</a></li>
-      <li class="header-catalog-menu-list-second-line second-block-stile margin-for-second-block"><a href="#" class="header-catalog-menu-link">Умные часы</a></li>
-      <li class="header-catalog-menu-list-third-line first-block-stile"><a href="#" class="header-catalog-menu-link first-block-stile">Экшн-камеры</a></li>
+      <li class="header-catalog-menu-list-first-line first-block-stile"><a href="#" class="header-catalog-menu-link">Виртуальная
+        реальность</a></li>
+      <li class="header-catalog-menu-list-first-line second-block-stile"><a href="#" class="header-catalog-menu-link">Фитнес-браслеты</a>
+      </li>
+      <li class="header-catalog-menu-list-first-line third-block-stile"><a href="#" class="header-catalog-menu-link">Квадракоптер</a>
+      </li>
+      <li class="header-catalog-menu-list-second-line first-block-stile"><a href="catalog.html"
+                                                                            class="header-catalog-menu-link">Моноподы
+        для селфи</a></li>
+      <li class="header-catalog-menu-list-second-line second-block-stile margin-for-second-block"><a href="#"
+                                                                                                     class="header-catalog-menu-link">Умные
+        часы</a></li>
+      <li class="header-catalog-menu-list-third-line first-block-stile"><a href="#"
+                                                                           class="header-catalog-menu-link first-block-stile">Экшн-камеры</a>
+      </li>
     </ul>
   </nav>
 </header>
@@ -67,6 +77,21 @@
   <section class="slider-product container">
     <h2 class="visually-hidden">Информация о товаре</h2>
     <ul class="slider-prodect-item">
+      <ul class="toggle-left">
+        <li class="slider-option">
+          <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="first-slide"
+                 checked>
+          <label for="first-slide"></label>
+        </li>
+        <li class="slider-option">
+          <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="second-slide">
+          <label for="second-slide"></label>
+        </li>
+        <li class="slider-option">
+          <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="third-slide">
+          <label for="third-slide"></label>
+        </li>
+      </ul>
       <li class="slider-product-list-page1">
         <div class="slider-product-img-container1">
           <img class="slider-product-img" src="img/slider-1-1.png" width="384" height="486" alt="Тринога">
@@ -82,21 +107,6 @@
           </p>
           <div class="slider-button-link">
             <a class="slider-product-link button" href="#">ПОДРОБНЕЕ</a>
-            <ul class="toggle-left">
-              <li class="slider-option">
-                <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="first-slide"
-                       checked>
-                <label for="first-slide"></label>
-              </li>
-              <li class="slider-option">
-                <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="second-slide">
-                <label for="second-slide"></label>
-              </li>
-              <li class="slider-option">
-                <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="third-slide">
-                <label for="third-slide"></label>
-              </li>
-            </ul>
           </div>
           <table class="slider-product-table">
             <tr>
@@ -129,20 +139,6 @@
           </p>
           <div class="slider-button-link">
             <a class="slider-product-link button" href="">ПОДРОБНЕЕ</a>
-            <ul class="toggle-left">
-              <li class="slider-option">
-                <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="first-slide2">
-                <label for="first-slide2"></label>
-              </li>
-              <li class="slider-option">
-                <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="second-slide2">
-                <label for="second-slide2"></label>
-              </li>
-              <li class="slider-option">
-                <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="third-slide2">
-                <label for="third-slide2"></label>
-              </li>
-            </ul>
           </div>
           <table class="slider-product-table">
             <tr>
@@ -160,28 +156,14 @@
         </div>
         <div class="slider-product-text-container3 slider-product-background-img-3">
           <div class="slider-product-title">
-            <span class="slider-product-title sub-title">Пархает как бабочка, жалит как пчела!</span>
+            <span class="slider-product-title sub-title">Порхает как бабочка, жалит как пчела!</span>
           </div>
           <p class="text-sign text-indents">
-            Этот обычный, на первый взгляд, квадрокоптер оснащен
+            Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
             мощным лазером, замаскированным под стандартную камеру.
           </p>
           <div class="slider-button-link">
             <a class="slider-product-link button" href="">ПОДРОБНЕЕ</a>
-            <ul class="toggle-left">
-              <li class="slider-option">
-                <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="first-slide3">
-                <label for="first-slide3"></label>
-              </li>
-              <li class="slider-option">
-                <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="second-slide3">
-                <label for="second-slide3"></label>
-              </li>
-              <li class="slider-option">
-                <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="third-slide3">
-                <label for="third-slide3"></label>
-              </li>
-            </ul>
           </div>
           <table class="slider-product-table">
             <tr>
@@ -386,14 +368,19 @@
     <div class="container">
       <h2 class="visually-hidden">Наши преймущества</h2>
       <div class="slider-services">
-        <div class="slider-services-item"> <!--first slide services-->
-          <div class="slider-button">
-            <button class="checked-slider-button-first slider-button-first" type="button" name="delivery">ДОСТАВКА</button>
-            <button class="slider-services-button slider-button-second" type="button" name="guarantee">ГАРАНТИЯ</button>
-            <button class="slider-services-button slider-button-third" type="button" name="credit">КРЕДИТ</button>
-          </div>
+        <div class="slider-button">
+          <button class="slider-button-first" type="button" name="second-slider" id="slider-button-first">ДОСТАВКА
+          </button>
+          <button class="slider-services-button slider-button-2" type="button" name="second-slider"
+                  id="slider-button-second">ГАРАНТИЯ
+          </button>
+          <button class="slider-services-button slider-button-3" type="button" name="second-slider"
+                  id="slider-button-third">КРЕДИТ
+          </button>
+        </div>
+        <div class="slider-services-item-first"> <!--first slide services-->
           <div class="slider-services-slid">
-            <div class="slider-services-text">
+            <div class="slider-services-text-first">
               <h2 class="sub-title slider-services-title">Доставка</h2>
               <p class="text-sign slider-text-style">
                 Мы с удовольствием доставим ваш товар прямо к вашему
@@ -401,47 +388,37 @@
                 зарабоьаем, поднимая его на ваш этаж.
               </p>
             </div>
-            <div class="slider-services-image">
+            <div class="slider-services-image-first">
               <img src="img/delivery.svg" height="164" width="136" alt="">
             </div>
           </div>
         </div>
-        <div class="slider-services-item visually-hidden"> <!--second slide services-->
-          <div class="slider-button">
-            <button class="slider-services-button slider-button-first" type="button" name="delivery">ДОСТАВКА</button>
-            <button class="checked-slider-button-second slider-button-second" type="button" name="guarantee">ГАРАНТИЯ</button>
-            <button class="slider-services-button slider-button-third" type="button" name="credit">КРЕДИТ</button>
-          </div>
+        <div class="slider-services-item-second visually-hidden"> <!--second slide services-->
           <div class="slider-services-slid">
-            <div class="slider-services-text">
-              <h2 class="sub-title">Гарантия</h2>
+            <div class="slider-services-text-second">
+              <h2 class="sub-title slider-services-title">Гарантия</h2>
               <p class="text-sign slider-text-style">
                 Если из-за возгорания купленного у нас товара у вас сгорит дом -
-                не переживайте, мы выдадим вам новый.
+                не переживайте, мы выдадим вам новый. <br>
                 Товар, не дом, конечно же.
               </p>
             </div>
-            <div class="slider-services-image">
+            <div class="slider-services-image-second">
               <img src="img/warranty.svg" height="195" width="171" alt="">
             </div>
           </div>
         </div>
-        <div class="slider-services-item visually-hidden">
-          <div class="slider-button">
-            <button class="slider-services-button slider-button-first" type="button" name="delivery">ДОСТАВКА</button>
-            <button class="slider-services-button slider-button-second" type="button" name="guarantee">ГАРАНТИЯ</button>
-            <button class="checked-slider-button-third slider-button-third" type="button" name="credit">КРЕДИТ</button>
-          </div>
+        <div class="slider-services-item-third visually-hidden"> <!--third slide services-->
           <div class="slider-services-slid">
-            <div class="slider-services-text">
-              <h2 class="sub-title">Кредит</h2>
-              <p class="text-sign">
+            <div class="slider-services-text-third">
+              <h2 class="sub-title slider-services-title">Кредит</h2>
+              <p class="text-sign slider-text-style">
                 Залезть в долговую яму стало проще! Кредитные консультанты
-                подберут для вас наиболее выгодные
+                подберут для вас наиболее выгодные <br>
                 условия кредита. Выгодные для нашего банка, разумеется.
               </p>
             </div>
-            <div class="slider-services-image">
+            <div class="slider-services-image-third">
               <img src="img/creddit.svg" height="188" width="156" alt="">
             </div>
           </div>
@@ -478,7 +455,7 @@
     <section class="about">
       <h2 class="sub-title about-title">О нас</h2>
       <p class="text-sign line-height-about">
-        Огромный выбор гаджтов не оставит равнодушным гика,
+        Огромный выбор гаджтов не оставит равнодушным гика, <br>
         который есть в каждом из нас.
       </p>
       <p class="text-sign indent line-height-about">
@@ -487,7 +464,7 @@
       </p>
       <ul class="about-list-text">
         <li class="about-list-text-item">Деловые линии</li>
-        <li class="about-list-text-item">Авторейдинг</li>
+        <li class="about-list-text-item">Автотрейдинг</li>
         <li class="about-list-text-item">ЖелДорЭкспедиция</li>
       </ul>
       <button class="button-about" type="button">ПОДРОБНЕЕ О НАС</button>
@@ -499,7 +476,7 @@
         проверить работоспособность покупки. Всякое бывает.
       </p>
       <a class="map-pop-up" href="#">
-      <div class="map"></div>
+        <div class="map"></div>
       </a>
       <button class="button-about" type="button" name="write-us" id="write-us">НАПИШИТЕ НАМ</button>
     </section>
@@ -677,7 +654,7 @@
     </div>
   </div>
 </footer>
-<section class="modal modal-map visually-hidden">
+<section class="modal-map visually-hidden">
   <h2 class="visually-hidden">Как до нас добраться</h2>
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473727!2d37.52742931613349!3d55.687034004529714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1601979689429!5m2!1sru!2sru"
@@ -685,25 +662,27 @@
     aria-hidden="false" tabindex="0"></iframe>
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
-<section class="modal modal-write visually-hidden">
+<section class="modal-write visually-hidden">
   <h2 class="visually-hidden">Напишите нам</h2>
-  <ul class="style-form-write">
-    <li>
-      <label class="modal-title">Ваше имя:</label>
-      <input class="name-form" type="text" name="first-second-name" placeholder="Имя Фамилия">
-    </li>
-    <li class="padding-form-email">
-      <label class="modal-title">Ваш e-mail:</label>
-      <input class="name-form" type="email" name="email" required placeholder="email@example.com">
-    </li>
-    <li class="text-form">
-      <form class="text-modal-stile" method="post">
-        <label class="modal-title" for="note">Текст письма:</label>
-        <textarea class="text-form-area" id="note" name="note" rows="9" placeholder="В свободной форме"></textarea>
-      </form>
-    </li>
-  </ul>
-  <button class="modal-button" type="submit" name="trash">Отправить</button>
+  <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+    <ul class="style-form-write">
+      <li>
+        <label class="modal-title">Ваше имя:</label>
+        <input class="name-form" type="text" name="first-second-name" placeholder="Имя Фамилия" required>
+      </li>
+      <li class="padding-form-email">
+        <label class="modal-title">Ваш e-mail:</label>
+        <input class="email-form" type="email" name="email" placeholder="email@example.com" required>
+      </li>
+      <li class="text-form">
+        <form class="text-modal-stile" method="post">
+          <label class="modal-title" for="note">Текст письма:</label>
+          <textarea class="text-form-area" id="note" name="note" rows="9" placeholder="В свободной форме"></textarea>
+        </form>
+      </li>
+    </ul>
+    <button class="modal-button" type="submit" name="trash">Отправить</button>
+  </form>
   <button class="modal-close" type="button" aria-label="Закрыть" id="close-write-us"></button>
 </section>
 <script src="js/script.js"></script>

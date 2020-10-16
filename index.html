@@ -54,20 +54,24 @@
       </div>
     </div>
     <ul class="header-catalog-menu visually-hidden">
-      <li class="header-catalog-menu-list-first-line first-block-stile"><a href="#" class="header-catalog-menu-link">Виртуальная
-        реальность</a></li>
-      <li class="header-catalog-menu-list-first-line second-block-stile"><a href="#" class="header-catalog-menu-link">Фитнес-браслеты</a>
+      <li class="header-catalog-menu-link header-catalog-menu-list-first-line first-block-stile">
+        <a href="#">Виртуальная реальность</a>
       </li>
-      <li class="header-catalog-menu-list-first-line third-block-stile"><a href="#" class="header-catalog-menu-link">Квадракоптер</a>
+      <li class="header-catalog-menu-link header-catalog-menu-list-first-line second-block-stile">
+        <a href="#">Фитнес-браслеты</a>
       </li>
-      <li class="header-catalog-menu-list-second-line first-block-stile"><a href="catalog.html"
-                                                                            class="header-catalog-menu-link">Моноподы
-        для селфи</a></li>
-      <li class="header-catalog-menu-list-second-line second-block-stile margin-for-second-block"><a href="#"
-                                                                                                     class="header-catalog-menu-link">Умные
-        часы</a></li>
-      <li class="header-catalog-menu-list-third-line first-block-stile"><a href="#"
-                                                                           class="header-catalog-menu-link first-block-stile">Экшн-камеры</a>
+      <li class="header-catalog-menu-link header-catalog-menu-list-first-line third-block-stile">
+        <a href="#">Квадракоптер</a>
+      </li>
+      <li class="header-catalog-menu-link header-catalog-menu-list-second-line first-block-stile">
+        <a href="catalog.html">Моноподы для селфи</a>
+      </li>
+      <li
+        class="header-catalog-menu-link header-catalog-menu-list-second-line second-block-stile margin-for-second-block">
+        <a href="#">Умные часы</a>
+      </li>
+      <li class="header-catalog-menu-link header-catalog-menu-list-third-line first-block-stile">
+        <a href="#">Экшн-камеры</a>
       </li>
     </ul>
   </nav>
@@ -76,22 +80,24 @@
   <h1 class="visually-hidden">Магазин Device</h1>
   <section class="slider-product container">
     <h2 class="visually-hidden">Информация о товаре</h2>
-    <ul class="slider-prodect-item">
-      <ul class="toggle-left">
-        <li class="slider-option">
-          <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="first-slide"
-                 checked>
-          <label for="first-slide"></label>
-        </li>
-        <li class="slider-option">
-          <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="second-slide">
-          <label for="second-slide"></label>
-        </li>
-        <li class="slider-option">
-          <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="third-slide">
-          <label for="third-slide"></label>
-        </li>
-      </ul>
+    <ul class="slider-product-item">
+      <li>
+        <ul class="toggle-left">
+          <li class="slider-option">
+            <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="first-slide"
+                   checked>
+            <label for="first-slide"></label>
+          </li>
+          <li class="slider-option">
+            <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="second-slide">
+            <label for="second-slide"></label>
+          </li>
+          <li class="slider-option">
+            <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="third-slide">
+            <label for="third-slide"></label>
+          </li>
+        </ul>
+      </li>
       <li class="slider-product-list-page1">
         <div class="slider-product-img-container1">
           <img class="slider-product-img" src="img/slider-1-1.png" width="384" height="486" alt="Тринога">
@@ -224,7 +230,7 @@
                6.07 0 00-3.63 5.56V117h14.33v-14.3c0-2.5-1.5-4.63-3.63-5.56v-28h4.8l5.04 1.22v-6.71l-5.05
                1.21h-4.8z" fill="#363636"/>
             </svg>
-            <span class="list-popular-text">Моноподы для селфи</span>
+            <span class="list-popular-text">Моноподы <br> для селфи</span>
           </div>
         </a>
       </li>
@@ -668,20 +674,18 @@
     <ul class="style-form-write">
       <li>
         <label class="modal-title">Ваше имя:</label>
-        <input class="name-form" type="text" name="first-second-name" placeholder="Имя Фамилия" required>
+        <input class="name-form" type="text" name="first-second-name" placeholder="Имя Фамилия">
       </li>
       <li class="padding-form-email">
         <label class="modal-title">Ваш e-mail:</label>
-        <input class="email-form" type="email" name="email" placeholder="email@example.com" required>
+        <input class="email-form" type="email" name="email" placeholder="email@example.com">
       </li>
-      <li class="text-form">
-        <form class="text-modal-stile" method="post">
-          <label class="modal-title" for="note">Текст письма:</label>
-          <textarea class="text-form-area" id="note" name="note" rows="9" placeholder="В свободной форме"></textarea>
-        </form>
+      <li class="text-modal-stile">
+        <label class="modal-title" for="note">Текст письма:</label>
+        <textarea class="text-form-area" id="note" name="note" rows="9" placeholder="В свободной форме"></textarea>
       </li>
     </ul>
-    <button class="modal-button" type="submit" name="trash">Отправить</button>
+    <button class="modal-button" type="submit" name="submit-modal">Отправить</button>
   </form>
   <button class="modal-close" type="button" aria-label="Закрыть" id="close-write-us"></button>
 </section>

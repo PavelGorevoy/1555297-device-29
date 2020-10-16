@@ -23,8 +23,8 @@ const secondSlideButtonSecond = document.getElementById('slider-button-second');
 const thirdSlideButtonSecond = document.getElementById('slider-button-third');
 
 
-const isStorageSupport = true;
-const storage = '';
+let isStorageSupport = true;
+let storage = '';
 
 try {
   storage = localStorage.getItem("name");
@@ -130,7 +130,14 @@ closeWriteUs.addEventListener('click', function (evt) {
 });
 
 writeForm.addEventListener("submit", function (evt) {
-  if (!modalName.value || !modalEmail.value) {
+  if (!modalName.value) {
+    evt.preventDefault();
+    modalName.classList.add("modal-error");
+  }
+});
+
+writeForm.addEventListener("submit", function (evt) {
+  if (!modalEmail.value) {
     evt.preventDefault();
     modalEmail.classList.add("modal-error");
   }
@@ -140,5 +147,6 @@ window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     modalWrite.classList.add("visually-hidden");
     modalMap.classList.add("visually-hidden");
+    headerMenu.classList.add("visually-hidden");
   }
 });

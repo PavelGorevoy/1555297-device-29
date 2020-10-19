@@ -15,7 +15,8 @@
     <div>
       <form class="header-form" action="#" method="get">
         <label class="hidden-content" for="form-input-search"></label>
-        <input class="form-input-search" type="search"  name="search" id="form-input-search" placeholder="Поиск по сайту">
+        <input class="form-input-search" type="search" name="search" id="form-input-search"
+               placeholder="Поиск по сайту">
         <button class="form-button-search" type="submit" name="search-button">Найти</button>
       </form>
     </div>
@@ -42,8 +43,9 @@
       <div class="navigation-drop-down">
         <div class="hover-drop-down">
           <a class="catalog" href="#">Каталог товаров</a>
-          <input class="plus-image catalog-item" type="image" src="img/plus.svg" width="15" height="15" name="plus"
-                 id="plus-image-catalog" alt="plus button">
+          <button class="plus-image" type="button" name="plus" id="plus-image-catalog">
+            <img src="img/plus.svg" width="15" height="15">
+          </button>
         </div>
       </div>
       <div class="navigation">
@@ -53,12 +55,25 @@
       </div>
     </div>
     <ul class="header-catalog-menu visually-hidden">
-      <li class="header-catalog-menu-list-first-line first-block-stile"><a href="#" class="header-catalog-menu-link">Виртуальная реальность</a></li>
-      <li class="header-catalog-menu-list-first-line second-block-stile"><a href="#" class="header-catalog-menu-link">Фитнес-браслеты</a></li>
-      <li class="header-catalog-menu-list-first-line third-block-stile"><a href="#" class="header-catalog-menu-link">Квадракоптер</a></li>
-      <li class="header-catalog-menu-list-second-line first-block-stile"><a href="catalog.html" class="header-catalog-menu-link">Моноподы для селфи</a></li>
-      <li class="header-catalog-menu-list-second-line second-block-stile margin-for-second-block"><a href="#" class="header-catalog-menu-link">Умные часы</a></li>
-      <li class="header-catalog-menu-list-third-line first-block-stile"><a href="#" class="header-catalog-menu-link first-block-stile">Экшн-камеры</a></li>
+      <li class="header-catalog-menu-link header-catalog-menu-list-first-line first-block-stile">
+        <a href="#">Виртуальная реальность</a>
+      </li>
+      <li class="header-catalog-menu-link header-catalog-menu-list-first-line second-block-stile">
+        <a href="#">Фитнес-браслеты</a>
+      </li>
+      <li class="header-catalog-menu-link header-catalog-menu-list-first-line third-block-stile">
+        <a href="#">Квадракоптер</a>
+      </li>
+      <li class="header-catalog-menu-link header-catalog-menu-list-second-line first-block-stile">
+        <a href="catalog.html">Моноподы для селфи</a>
+      </li>
+      <li
+        class="header-catalog-menu-link header-catalog-menu-list-second-line second-block-stile margin-for-second-block">
+        <a href="#">Умные часы</a>
+      </li>
+      <li class="header-catalog-menu-link header-catalog-menu-list-third-line first-block-stile">
+        <a href="#">Экшн-камеры</a>
+      </li>
     </ul>
   </nav>
 </header>
@@ -97,13 +112,15 @@
         </div>
         <div class="button-sort">
           <button class="button-sort-item" type="button" name="icon-up-dir">
-            <svg class="button-sort-item-hover-up" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="button-sort-item-hover-up" width="18" height="18" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
               <path opacity="1" d="M3 14h11L8.5 4 3 14z" fill="#000"/>
             </svg>
           </button>
           <button class="button-sort-item" type="button" name="icon-down-dir">
             <svg class="button-sort-item-hover" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity="1" d="M14 4H3l5.5 10L14 4z" fill="#000"/></svg>
+              <path opacity="1" d="M14 4H3l5.5 10L14 4z" fill="#000"/>
+            </svg>
           </button>
         </div>
       </div>
@@ -187,7 +204,7 @@
             <li class="hover-item">
               <div class="img-position">
                 <p>
-                  <img class="img-hover" src="img/hover1.png" width="360" height="380" alt="">
+                  <img src="img/hover1.png" width="360" height="380" alt="">
                 </p>
                 <div class="button-catalog-position">
                   <button class="trash-catalog" type="button" name="trash">В корзину</button>
@@ -204,7 +221,7 @@
             <li class="hover-item">
               <div class="img-position">
                 <p>
-                  <img class="img-hover" src="img/hover2.png" width="360" height="380" alt="">
+                  <img src="img/hover2.png" width="360" height="380" alt="">
                 </p>
                 <div class="button-catalog-position">
                   <button class="trash-catalog" type="button" name="trash">В корзину</button>
@@ -221,7 +238,7 @@
             <li class="hover-item">
               <div class="img-position">
                 <p>
-                  <img class="img-hover" src="img/hover3.png" width="360" height="380" alt="">
+                  <img src="img/hover3.png" width="360" height="380" alt="">
                 </p>
                 <div class="button-catalog-position">
                   <button class="trash-catalog" type="button" name="trash">В корзину</button>
@@ -238,7 +255,7 @@
             <li class="hover-item">
               <div class="img-position marker">
                 <p>
-                  <img class="img-hover" src="img/hover4.png" width="360" height="380" alt="">
+                  <img src="img/hover4.png" width="360" height="380" alt="">
                 </p>
                 <div class="button-catalog-position">
                   <button class="trash-catalog" type="button" name="trash">В корзину</button>

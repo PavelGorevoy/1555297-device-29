@@ -194,7 +194,7 @@ li {
 .form-button-search:active  {
   color: var(--search-button);
   background-color: var(--basic-black);
-  visibility:visible
+  visibility:visible;
 }
 
 /*end search form*/
@@ -291,7 +291,13 @@ li {
 }
 
 .plus-image {
-  outline: none;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.plus-image img {
+  padding-top: 2px;
 }
 
 /*pop up catalog*/
@@ -383,7 +389,7 @@ li {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   padding: 0;
-  margin-right: 16px;
+  margin-right: 5px;
 }
 
 .slider-product-item {
@@ -1152,68 +1158,48 @@ li {
   transition: opacity .2s;
 }
 
-.img-hover {
-  position: relative;
-  z-index: 3;
-  transition: z-index .2s;
-}
-
-.img-hover:hover {
-  z-index: 1;
-}
-
-.marker::before {
-  content: url("../img/marker-new.svg");
-  position: absolute;
-  z-index: 4;
-  padding-left: 271px;
-  padding-top: 29px;
-}
-
 .img-position {
   position: relative;
-  transition: opacity .2s;
+  transition: opacity;
 }
 
 .img-position p {
-  height: 380px;
-}
+   height: 380px;
+ }
 
 .img-position:hover {
   opacity: .7;
 }
 
+.img-position:hover > .button-catalog-position {
+  visibility: visible;
+}
+
 .button-catalog-position {
   position: absolute;
-  z-index: 2;
   top: 180px;
   left: 77px;
   bottom: 138px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: z-index .2s;
-  opacity: 2;
-}
-
-.button-catalog-position:hover {
-  z-index: 4;
+  visibility: hidden;
 }
 
 .comprison {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  padding-top: 22px;
-  border: 0;
-  opacity: .5;
-  background: transparent;
-  outline: none;
-  cursor: pointer;
-  transition: opacity .2s;
-}
+   font-family: "Open Sans", Arial, sans-serif;
+   font-size: 13px;
+   line-height: 18px;
+   font-weight: 300;
+   letter-spacing: 0.1em;
+   padding-top: 22px;
+   border: 0;
+   opacity: .5;
+   background: transparent;
+   outline: none;
+   cursor: pointer;
+   transition: opacity .2s;
+ }
 
 .comprison:hover,
 .comprison:focus {
@@ -1222,6 +1208,13 @@ li {
 
 .comprison:active {
   opacity: .2;
+}
+.marker::before {
+  content: url("../img/marker-new.svg");
+  position: absolute;
+  z-index: 4;
+  top: 29px;
+  left: 271px;
 }
 
 .catalog-item-container {
@@ -1287,7 +1280,7 @@ li {
 }
 
 .footer-academy-logo {
-  padding-left: 485px;
+  margin-left: 485px;
   transition: opacity .2s;
 
 }
@@ -1577,6 +1570,7 @@ li {
 
 .hover-list p {
   margin: 0;
+  transition: opacity .2s;
 }
 
 .hover-item {

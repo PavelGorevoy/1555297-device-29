@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 800;
   src: local("Gilroy"),
-  url(../fonts/gilroyextrabold.woff2) format('woff2'),
-  url(../fonts/gilroyextrabold.woff) format('woff');
+  url(../fonts/gilroyextrabold.woff2) format("woff2"),
+  url(../fonts/gilroyextrabold.woff) format("woff");
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-style: normal;
   font-weight: 300;
   src: local("Gilroy"),
-  url(../fonts/gilroylight.woff2) format('woff2'),
-  url(../fonts/gilroylight.woff) format('woff');
+  url(../fonts/gilroylight.woff2) format("woff2"),
+  url(../fonts/gilroylight.woff) format("woff");
 }
 
 @font-face {
@@ -21,8 +21,8 @@
   font-style: normal;
   font-weight: 800;
   src: local("Open Sans"),
-  url(../fonts/opensans.woff2) format('woff2'),
-  url(../fonts/opensans.woff) format('woff');
+  url(../fonts/opensans.woff2) format("woff2"),
+  url(../fonts/opensans.woff) format("woff");
 }
 
 @font-face {
@@ -30,8 +30,8 @@
   font-style: normal;
   font-weight: 300;
   src: local("Open Sans"),
-  url(../fonts/opensanslight.woff2) format('woff2'),
-  url(../fonts/opensanslight.woff) format('woff');
+  url(../fonts/opensanslight.woff2) format("woff2"),
+  url(../fonts/opensanslight.woff) format("woff");
 }
 
 :root {
@@ -65,7 +65,6 @@ body {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 700;
   color: var(--basic-black);
   background-color: var(--bodu-bg);
 }
@@ -128,7 +127,7 @@ li {
   position: absolute;
   height: 50px;
   width: 50px;
-  background-image: url('../img/icon_search.svg');
+  background-image: url("../img/icon_search.svg");
   background-position: 0% 61%;
   background-repeat: no-repeat;
 }
@@ -191,10 +190,10 @@ li {
   background-color: var(--basic-black);
 }
 
-.form-button-search:active  {
+.form-button-search:active {
   color: var(--search-button);
   background-color: var(--basic-black);
-  visibility:visible;
+  visibility: visible;
 }
 
 /*end search form*/
@@ -371,6 +370,7 @@ li {
 
 .nav-header-list {
   display: flex;
+  flex-wrap: wrap;
   font-size: 18px;
   padding: 0 60px 0 60px;
 }
@@ -834,8 +834,11 @@ li {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-  letter-spacing: 0.05em;
   transition: opacity .2s;
+}
+
+.list-popular-text--spacing {
+  letter-spacing: 0.05em;
 }
 
 .list-popular-text:active {
@@ -972,19 +975,22 @@ li {
 }
 
 .button-about {
-  width: 260px;
-  height: 22px;
+  padding-left: 24px;
+  padding-right: 18px;
   text-align: center;
   font-size: 18px;
   font-weight: 800;
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  border: 0;
-  background: url("../img/button.svg") no-repeat 0 55%;
+  background: url("../img/button.svg") no-repeat 0 50%;
   transition: background-color .2s, color .2s;
-  outline: none;
   cursor: pointer;
+}
+
+.button-about-write {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .button-about:hover {
@@ -1013,8 +1019,8 @@ li {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border: 0;
-  background: url("../img/button.svg") no-repeat 0 55%;
-  transition: background-color .2s, color .2s;
+  background: url("../img/button.svg") no-repeat 0 50%;
+  transition: background-color .2s, color .2s, height .2s;
   outline: none;
   cursor: pointer;
 }
@@ -1148,13 +1154,10 @@ li {
   margin-left: 38px;
 }
 
-.footer-img-logo {
-  height: 35px;
-}
-
 .footer-logo-hover {
   position: absolute;
   top: 63px;
+  height: 35px;
   transition: opacity .2s;
 }
 
@@ -1164,8 +1167,8 @@ li {
 }
 
 .img-position p {
-   height: 380px;
- }
+  height: 380px;
+}
 
 .img-position:hover {
   opacity: .7;
@@ -1187,19 +1190,19 @@ li {
 }
 
 .comprison {
-   font-family: "Open Sans", Arial, sans-serif;
-   font-size: 13px;
-   line-height: 18px;
-   font-weight: 300;
-   letter-spacing: 0.1em;
-   padding-top: 22px;
-   border: 0;
-   opacity: .5;
-   background: transparent;
-   outline: none;
-   cursor: pointer;
-   transition: opacity .2s;
- }
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  padding-top: 22px;
+  border: 0;
+  opacity: .5;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: opacity .2s;
+}
 
 .comprison:hover,
 .comprison:focus {
@@ -1209,6 +1212,7 @@ li {
 .comprison:active {
   opacity: .2;
 }
+
 .marker::before {
   content: url("../img/marker-new.svg");
   position: absolute;
@@ -1271,6 +1275,7 @@ li {
   letter-spacing: 0.2em;
   padding: 0;
   font-size: 18px;
+  font-weight: 800;
   min-width: 111px;
   transition: opacity .2s;
 }
@@ -1282,7 +1287,6 @@ li {
 .footer-academy-logo {
   margin-left: 485px;
   transition: opacity .2s;
-
 }
 
 .form-about {
@@ -1407,11 +1411,11 @@ li {
 }
 
 .button-sort-item-hover-up:hover path,
-.button-sort-item-hover-up:focus path{
+.button-sort-item-hover-up:focus path {
   fill-opacity: .4;
 }
 
-.button-sort-item-hover-up:active path{
+.button-sort-item-hover-up:active path {
   fill-opacity: 1;
 }
 
@@ -1478,7 +1482,7 @@ li {
   font-size: 16px;
   line-height: 20px;
   font-weight: 800;
-  width: 120px;
+  width: 66px;
   text-transform: uppercase;
   border: 0;
   letter-spacing: 0.1em;
@@ -1489,7 +1493,7 @@ li {
 
 .rectangle-button:first-child {
   margin-right: 203px;
-  padding: 25px 30px 25px 30px;
+  padding: 25px 25px 25px 30px;
 }
 
 .rectangle-button:last-child {
@@ -1766,7 +1770,7 @@ li {
 
 .range-controls .toggle {
   position: absolute;
-  top: 2px;
+  top: 0;
   left: 0;
   width: 4px;
   height: 4px;
@@ -1807,6 +1811,7 @@ li {
   border: none;
   background: var(--basic-grey-light);
   margin-bottom: 38px;
+  -moz-appearance: textfield;
 }
 
 /*radio button filter*/
@@ -1864,8 +1869,10 @@ li {
   border-radius: 50%;
 }
 
-.filter-input-radio + label:hover::before,
-.filter-input-radio:checked + label:hover::after {
+.filter-input:hover + label::before,
+.filter-input:focus + label::before,
+.filter-input-radio:hover:checked + label::after,
+.filter-input-radio:focus:checked + label::after {
   opacity: .6;
 }
 
@@ -1909,8 +1916,12 @@ li {
 }
 
 
-.filter-input-checkbox + label:hover::before,
-.filter-input-checkbox:checked + label:hover::after {
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:hover + label::after,
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:focus + label::after,
+.filter-input-checkbox:focus:checked + label::before,
+.filter-input-checkbox:focus:checked + label::after {
   opacity: .6;
 }
 

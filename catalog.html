@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Catalog</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="body-page">
 <header class="header">
@@ -15,25 +15,24 @@
     <div>
       <form class="header-form" action="#" method="get">
         <label class="hidden-content" for="form-input-search"></label>
-        <input class="form-input-search" type="search" name="search" id="form-input-search"
-               placeholder="Поиск по сайту">
+        <input class="form-input-search" type="search" name="search" id="form-input-search" placeholder="Поиск по сайту">
         <button class="form-button-search" type="submit" name="search-button">Найти</button>
       </form>
     </div>
     <div class="menu-list">
       <a class="menu-link user-come text-sign" href="blank.html">
         <div class="user">
-          <img class="header-link-input-pudding" src="img/user.svg" width="8" height="9" alt="">
+          <img class="header-link-input-pudding" src="img/user.svg" width="8" height="9" alt="Войти">
           <div style="padding-right: 20px">Валентин Петухов</div>
           <div style="opacity: .3">Войти</div>
         </div>
       </a>
       <a class="menu-link compare text-sign" href="#">
-        <img class="header-link-pudding" src="img/chart.svg" width="8" height="8" alt="">
+        <img class="header-link-pudding" src="img/chart.svg" width="8" height="8" alt="Сравнить">
         Сравнить
       </a>
       <a class="menu-link trash text-sign" href="#">
-        <img class="header-link-pudding" src="img/trash.svg" width="10" height="10" alt="">
+        <img class="header-link-pudding" src="img/trash.svg" width="10" height="10" alt="Корзина">
         Корзина
       </a>
     </div>
@@ -44,7 +43,7 @@
         <div class="hover-drop-down">
           <a class="catalog" href="#">Каталог товаров</a>
           <button class="plus-image" type="button" name="plus" id="plus-image-catalog">
-            <img src="img/plus.svg" width="15" height="15">
+            <img src="img/plus.svg" width="15" height="15" alt="plus button">
           </button>
         </div>
       </div>
@@ -67,8 +66,7 @@
       <li class="header-catalog-menu-link header-catalog-menu-list-second-line first-block-stile">
         <a href="catalog.html">Моноподы для селфи</a>
       </li>
-      <li
-        class="header-catalog-menu-link header-catalog-menu-list-second-line second-block-stile margin-for-second-block">
+      <li class="header-catalog-menu-link header-catalog-menu-list-second-line second-block-stile margin-for-second-block">
         <a href="#">Умные часы</a>
       </li>
       <li class="header-catalog-menu-link header-catalog-menu-list-third-line first-block-stile">
@@ -101,19 +99,18 @@
         <h2 class="title-sorting">СОРТИРОВКА:</h2>
         <div class="sorting">
           <div>
-            <button class="button-sorting-item" type="button">По цене</button>
+            <a class="button-sorting-item" href="#">По цене</a>
           </div>
           <div class="indents-sorting-item">
-            <button class="button-sorting-item" type="button">По типу</button>
+            <a class="button-sorting-item" href="#">По типу</a>
           </div>
           <div>
-            <button class="button-sorting-item" type="button">По популярности</button>
+            <a class="button-sorting-item" href="#">По популярности</a>
           </div>
         </div>
         <div class="button-sort">
           <button class="button-sort-item" type="button" name="icon-up-dir">
-            <svg class="button-sort-item-hover-up" width="18" height="18" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
+            <svg class="button-sort-item-hover-up" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path opacity="1" d="M3 14h11L8.5 4 3 14z" fill="#000"/>
             </svg>
           </button>
@@ -154,28 +151,23 @@
             <legend class="border-legend">Цвет</legend>
             <ul class="filter-checkbox-items">
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="black"
-                       id="filter-black" checked>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="black" id="filter-black" checked>
                 <label class="text-filter-button" for="filter-black">Черный</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="white"
-                       id="filter-white">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="white" id="filter-white">
                 <label class="text-filter-button" for="filter-white">Белый</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="blue"
-                       id="filter-blue" checked>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="blue" id="filter-blue" checked>
                 <label class="text-filter-button" for="filter-blue">Синий</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="red"
-                       id="filter-red" checked disabled>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="red" id="filter-red" checked disabled>
                 <label class="text-filter-button" for="filter-red">Красный</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pink"
-                       id="filter-pink" disabled>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pink" id="filter-pink" disabled>
                 <label class="text-filter-button" for="filter-pink">Розовый</label>
               </li>
             </ul>
@@ -185,12 +177,12 @@
             <ul class="filter-radio-items">
               <li class="filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="bluetooth-group"
-                       value="having" id="filter-have" checked disabled>
+                       value="having" id="filter-have" checked>
                 <label class="text-filter-button" for="filter-have">Есть</label>
               </li>
               <li class="filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="bluetooth-group"
-                       value="no-having" id="filter-no-have">
+                       value="no-having" id="filter-no-have" disabled>
                 <label class="text-filter-button" for="filter-no-have">Нет</label>
               </li>
             </ul>
@@ -203,12 +195,10 @@
           <ul class="hover-list">
             <li class="hover-item">
               <div class="img-position">
-                <p>
-                  <img src="img/hover1.png" width="360" height="380" alt="">
-                </p>
+                <img src="img/hover1.png" width="360" height="380" alt="catalog cart">
                 <div class="button-catalog-position">
-                  <button class="trash-catalog" type="button" name="trash">В корзину</button>
-                  <button class="comprison" type="button" name="add-to-comparison">Добавить к сравнению</button>
+                  <a class="trash-catalog" href="#">В корзину</a>
+                  <a class="comprison" href="#">Добавить к сравнению</a>
                 </div>
               </div>
               <a href="#">
@@ -220,12 +210,10 @@
             </li>
             <li class="hover-item">
               <div class="img-position">
-                <p>
-                  <img src="img/hover2.png" width="360" height="380" alt="">
-                </p>
+                <img src="img/hover2.png" width="360" height="380" alt="catalog cart">
                 <div class="button-catalog-position">
-                  <button class="trash-catalog" type="button" name="trash">В корзину</button>
-                  <button class="comprison" type="button" name="add-to-comparison">Добавить к сравнению</button>
+                  <a class="trash-catalog" href="#">В корзину</a>
+                  <a class="comprison" href="#">Добавить к сравнению</a>
                 </div>
               </div>
               <a href="#">
@@ -237,12 +225,10 @@
             </li>
             <li class="hover-item">
               <div class="img-position">
-                <p>
-                  <img src="img/hover3.png" width="360" height="380" alt="">
-                </p>
+                <img src="img/hover3.png" width="360" height="380" alt="catalog cart">
                 <div class="button-catalog-position">
-                  <button class="trash-catalog" type="button" name="trash">В корзину</button>
-                  <button class="comprison" type="button" name="add-to-comparison">Добавить к сравнению</button>
+                  <a class="trash-catalog" href="#">В корзину</a>
+                  <a class="comprison" href="#">Добавить к сравнению</a>
                 </div>
               </div>
               <a href="#">
@@ -254,12 +240,10 @@
             </li>
             <li class="hover-item">
               <div class="img-position marker">
-                <p>
-                  <img src="img/hover4.png" width="360" height="380" alt="">
-                </p>
+                <img src="img/hover4.png" width="360" height="380" alt="catalog cart">
                 <div class="button-catalog-position">
-                  <button class="trash-catalog" type="button" name="trash">В корзину</button>
-                  <button class="comprison" type="button" name="add-to-comparison">Добавить к сравнению</button>
+                  <a class="trash-catalog" href="#">В корзину</a>
+                  <a class="comprison" href="#">Добавить к сравнению</a>
                 </div>
               </div>
               <a href="#">
@@ -272,7 +256,7 @@
           </ul>
         </div>
         <div class="rectangle">
-          <button class="rectangle-button" type="button">Назад</button>
+          <a class="rectangle-button" href="#">Назад</a>
           <ul class="nav-list">
             <li>
               <a class="pagination-item-current" href="">1</a>
@@ -284,7 +268,7 @@
               <a class="nav-list-link-page" href="#">3</a>
             </li>
           </ul>
-          <button class="rectangle-button" type="button">Вперед</button>
+          <a class="rectangle-button" href="#">Вперед</a>
         </div>
       </div>
     </div>
@@ -293,7 +277,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-cont">
-      <a class="footer-img-logo" href="index.html">
+      <a href="index.html">
         <img class="footer-logo-hover" src="img/e-footer-logo.svg" width="163" height="35"
              alt="Логотип магазина «Device»">
       </a>
@@ -301,17 +285,17 @@
         <div class="footer-link text-sign footer-link-catalog">
           <a class="footer-link-item user-footer" href="blank.html" style="opacity: .7">
             <div class="user">
-              <img class="user-footer-img" src="img/footeruser.svg" width="8" height="9" alt="">
+              <img class="user-footer-img" src="img/footeruser.svg" width="8" height="9" alt="Войти">
               <div style="padding-right: 20px">Валентин Петухов</div>
               <div>Войти</div>
             </div>
           </a>
           <a class="footer-link-item footer-compare" href="#">
-            <img class="footer-compare-img" src="img/footerchart.svg" width="8" height="8" alt="">
+            <img class="footer-compare-img" src="img/footerchart.svg" width="8" height="8" alt="Сровнить">
             Сравнить
           </a>
           <a class="footer-link-item trash-footer" href="#">
-            <img class="trash-footer-img" src="img/footertrash.svg" width="10" height="10" alt="">
+            <img class="trash-footer-img" src="img/footertrash.svg" width="10" height="10" alt="Корзина">
             Корзина
           </a>
         </div>
@@ -341,7 +325,9 @@
         <ul class="footer-social-list">
           <li>
             <a class="footer-social-list-link" href="#">
-              <svg class="footer-social-hover" width="32" height="32" viewBox="0 0 32 32" fill="none"
+              <span class="visually-hidden">Facebook</span>
+              <svg class="footer-social-hover" aria-hidden="true" focusable="false" width="32" height="32"
+                   viewBox="0 0 32 32" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
                 <path d="M31.9973 16C31.9973 7.16267 24.8347 0 15.9987
                 0C7.16267 0 0 7.16267 0 16C0 23.984 5.85067 30.6027
@@ -356,7 +342,9 @@
           </li>
           <li class="social-indents">
             <a class="footer-social-list-link" href="#">
-              <svg class="footer-social-hover" width="32" height="32" viewBox="0 0 32 32" fill="none"
+              <span class="visually-hidden">Instagram</span>
+              <svg class="footer-social-hover" aria-hidden="true" focusable="false" width="32" height="32"
+                   viewBox="0 0 32 32" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
                 <path d="M21 16C21 17.3261 20.4732 18.5979 19.5355
                 19.5355C18.5979 20.4732 17.3261 21 16 21C14.6739
@@ -402,7 +390,9 @@
           </li>
           <li>
             <a class="footer-social-list-link" href="#">
-              <svg class="footer-social-hover" width="32" height="32" viewBox="0 0 32 32" fill="none"
+              <span class="visually-hidden">Twitter</span>
+              <svg class="footer-social-hover" aria-hidden="true" focusable="false" width="32" height="32"
+                   viewBox="0 0 32 32" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 32C13.8333 32 11.7604 31.5781
                 9.78125 30.7344C7.80208 29.8906 6.09896 28.7552
@@ -462,6 +452,6 @@
     </div>
   </div>
 </footer>
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>

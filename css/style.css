@@ -127,7 +127,7 @@ li {
   position: absolute;
   height: 50px;
   width: 50px;
-  background-image: url("../img/icon_search.svg");
+  background-image: url("../img/icon-search.svg");
   background-position: 0% 61%;
   background-repeat: no-repeat;
 }
@@ -858,7 +858,6 @@ li {
   padding: 0;
   list-style: none;
 }
-
 
 .dji {
   background-image: url("../img/logotypes1.png");

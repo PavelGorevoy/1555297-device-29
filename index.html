@@ -4,36 +4,33 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="body-page">
 <header class="header">
-  <a class="header-logo" href="index.html">
-    <img class="header-logo-img" src="img/e-logo.svg" width="163" height="35" alt="Логотип магазина «Device»">
-  </a>
+  <img class="header-logo-img" src="img/e-logo.svg" width="163" height="35" alt="Логотип магазина «Device»">
   <div class="header-menu">
     <div>
       <form class="header-form" action="#" method="get">
         <label class="hidden-content" for="form-input-search"></label>
-        <input class="form-input-search" type="search" name="search" id="form-input-search"
-               placeholder="Поиск по сайту">
+        <input class="form-input-search" type="search" name="search" id="form-input-search" placeholder="Поиск по сайту">
         <button class="form-button-search" type="submit" name="search-button">Найти</button>
       </form>
     </div>
     <div class="menu-list">
       <a class="menu-link user-come text-sign" href="blank.html">
         <div class="user">
-          <img class="header-link-input-pudding" src="img/user.svg" width="8" height="9" alt="">
+          <img class="header-link-input-pudding" src="img/user.svg" width="8" height="9" alt="Войти">
           <div></div>
           <div>Войти</div>
         </div>
       </a>
       <a class="menu-link compare text-sign" href="#">
-        <img class="header-link-pudding" src="img/chart.svg" width="8" height="8" alt="">
+        <img class="header-link-pudding" src="img/chart.svg" width="8" height="8" alt="Сравнить">
         Сравнить
       </a>
       <a class="menu-link trash text-sign" href="#">
-        <img class="header-link-pudding" src="img/trash.svg" width="10" height="10" alt="">
+        <img class="header-link-pudding" src="img/trash.svg" width="10" height="10" alt="Корзина">
         Корзина
       </a>
     </div>
@@ -44,7 +41,7 @@
         <div class="hover-drop-down">
           <a class="catalog" href="#">Каталог товаров</a>
           <button class="plus-image" type="button" name="plus" id="plus-image-catalog">
-            <img src="img/plus.svg" width="15" height="15">
+            <img src="img/plus.svg" width="15" height="15" alt="plus button">
           </button>
         </div>
       </div>
@@ -67,8 +64,7 @@
       <li class="header-catalog-menu-link header-catalog-menu-list-second-line first-block-stile">
         <a href="catalog.html">Моноподы для селфи</a>
       </li>
-      <li
-        class="header-catalog-menu-link header-catalog-menu-list-second-line second-block-stile margin-for-second-block">
+      <li class="header-catalog-menu-link header-catalog-menu-list-second-line second-block-stile margin-for-second-block">
         <a href="#">Умные часы</a>
       </li>
       <li class="header-catalog-menu-link header-catalog-menu-list-third-line first-block-stile">
@@ -85,8 +81,7 @@
       <li>
         <ul class="toggle-left">
           <li class="slider-option">
-            <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="first-slide"
-                   checked>
+            <input class="visually-hidden slider-product-toggle" type="radio" name="slider" id="first-slide" checked>
             <label for="first-slide"></label>
           </li>
           <li class="slider-option">
@@ -105,8 +100,7 @@
         </div>
         <div class="slider-product-text-container1 slider-product-background-img-1">
           <div class="slider-product-title">
-            <span class="sub-title">Делай селфи, <br>
-              как Бен Стиллер!</span>
+            <span class="sub-title">Делай селфи, <br> как Бен Стиллер!</span>
           </div>
           <p class="text-sign text-indents">
             Самая длинная палка для селфи доступна в нашем магазине. <br>
@@ -135,10 +129,7 @@
         </div>
         <div class="slider-product-text-container2 slider-product-background-img-2">
           <div class="slider-product-title">
-            <span class="slider-product-title sub-title">
-              Худеем <br>
-              правильно!
-            </span>
+            <span class="slider-product-title sub-title"> Худеем <br> правильно! </span>
           </div>
           <p class="text-sign text-indents">
             Мотивирующие фитнес-браслеты помогут найти в себе
@@ -214,7 +205,7 @@
                   20.454 44.479 15.215 49.14 15.215C53.802 15.215 57.5821 20.454 57.5821 26.917C57.5821
                    33.379 53.802 38.618 49.14 38.618Z" fill="#363636"/>
             </svg>
-            <span class="list-popular-text">Виртуальная реальность</span>
+            <span class="list-popular-text list-popular-text--spacing">Виртуальная реальность</span>
           </div>
         </a>
       </li>
@@ -231,7 +222,7 @@
                6.07 0 00-3.63 5.56V117h14.33v-14.3c0-2.5-1.5-4.63-3.63-5.56v-28h4.8l5.04 1.22v-6.71l-5.05
                1.21h-4.8z" fill="#363636"/>
             </svg>
-            <span class="list-popular-text">Моноподы <br> для селфи</span>
+            <span class="list-popular-text list-popular-text--spacing">Моноподы <br> для селфи</span>
           </div>
         </a>
       </li>
@@ -259,7 +250,7 @@
                  100-2.87 1.44 1.44 0 000 2.87zM39.83 47.34a1.43 1.43 0 100-2.87 1.43 1.43
                  0 000 2.87z" fill="#363636"/>
             </svg>
-            <span class="list-popular-text">Экшн-камеры</span>
+            <span class="list-popular-text list-popular-text--spacing">Экшн-камеры</span>
           </div>
         </a>
       </li>
@@ -328,7 +319,7 @@
                     82.67H9.65c-.85 0-1.43.68-1.3 1.52l1.6 10.76a3.68 3.68 0 003.52 3.03h26.04a3.68 3.68
                      0 003.51-3.02l1.62-10.77a1.28 1.28 0 00-1.3-1.52z" fill="#363636"/>
             </svg>
-            <span class="list-popular-text">Умные часы</span>
+            <span class="list-popular-text list-popular-text--spacing">Умные часы</span>
           </div>
         </a>
       </li>
@@ -365,7 +356,7 @@
                  7.07 1.46 3.66 0 5.8-.13 7.87-.49 3.53-.59 6.6-1.51 7.24-2.23.5-.54.5-.54-.23-1.16-1.34-1.13-5.96-2.18-11.92-2.67-3.48-.29-4.48-.29-6.75.02z"
                     fill="#363636"/>
             </svg>
-            <span class="list-popular-text">Квадрокоптеры</span>
+            <span class="list-popular-text list-popular-text--spacing">Квадрокоптеры</span>
           </div>
         </a>
       </li>
@@ -376,13 +367,14 @@
       <h2 class="visually-hidden">Наши преймущества</h2>
       <div class="slider-services">
         <div class="slider-button">
-          <button class="slider-button-first" type="button" name="second-slider" id="slider-button-first">ДОСТАВКА
+          <button class="slider-button-first" type="button" name="second-slider" id="slider-button-first">
+            ДОСТАВКА
           </button>
-          <button class="slider-services-button slider-button-2" type="button" name="second-slider"
-                  id="slider-button-second">ГАРАНТИЯ
+          <button class="slider-services-button slider-button-2" type="button" name="second-slider" id="slider-button-second">
+            ГАРАНТИЯ
           </button>
-          <button class="slider-services-button slider-button-3" type="button" name="second-slider"
-                  id="slider-button-third">КРЕДИТ
+          <button class="slider-services-button slider-button-3" type="button" name="second-slider" id="slider-button-third">
+            КРЕДИТ
           </button>
         </div>
         <div class="slider-services-item-first"> <!--first slide services-->
@@ -396,7 +388,7 @@
               </p>
             </div>
             <div class="slider-services-image-first">
-              <img src="img/delivery.svg" height="164" width="136" alt="">
+              <img src="img/delivery.svg" height="164" width="136" alt="Доставка">
             </div>
           </div>
         </div>
@@ -411,7 +403,7 @@
               </p>
             </div>
             <div class="slider-services-image-second">
-              <img src="img/warranty.svg" height="195" width="171" alt="">
+              <img src="img/warranty.svg" height="195" width="171" alt="Гарантия">
             </div>
           </div>
         </div>
@@ -426,7 +418,7 @@
               </p>
             </div>
             <div class="slider-services-image-third">
-              <img src="img/creddit.svg" height="188" width="156" alt="">
+              <img src="img/creddit.svg" height="188" width="156" alt="Кредит">
             </div>
           </div>
         </div>
@@ -474,7 +466,7 @@
         <li class="about-list-text-item">Автотрейдинг</li>
         <li class="about-list-text-item">ЖелДорЭкспедиция</li>
       </ul>
-      <button class="button-about" type="button">ПОДРОБНЕЕ О НАС</button>
+      <a class="button-about" href="#">ПОДРОБНЕЕ О НАС</a>
     </section>
     <section class="contacts">
       <h2 class="sub-title about-title">Контакты</h2>
@@ -482,43 +474,38 @@
         Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
         проверить работоспособность покупки. Всякое бывает.
       </p>
-      <a class="map-pop-up" href="#">
+      <a class="map-pop-up" href="https://www.google.com/maps?ll=55.687031,37.529618&z=17&t=m&hl=ru&gl=RU&mapclient=embed&q=%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0+119311">
         <div class="map"></div>
       </a>
-      <button class="button-about" type="button" name="write-us" id="write-us">НАПИШИТЕ НАМ</button>
+      <a class="button-about button-about-write" href="#">НАПИШИТЕ НАМ</a>
     </section>
   </div>
 </main>
 <footer class="footer">
   <div class="container">
     <div class="footer-cont">
-      <a class="footer-img-logo" href="index.html">
-        <img class="footer-logo-hover" src="img/e-footer-logo.svg" width="163" height="35"
-             alt="Логотип магазина «Device»">
-      </a>
+      <img class="footer-logo-hover" src="img/e-footer-logo.svg" width="163" height="35" alt="Логотип магазина «Device»">
       <div class="footer-block-first">
         <div class="footer-link text-sign">
           <a class="footer-link-item user-footer" href="blank.html">
             <div class="user">
-              <img class="user-footer-img" src="img/footeruser.svg" width="8" height="9" alt="">
+              <img class="user-footer-img" src="img/footeruser.svg" width="8" height="9" alt="Войти">
               <div></div>
               <div>Войти</div>
             </div>
           </a>
           <a class="footer-link-item footer-compare" href="#">
-            <img class="footer-compare-img" src="img/footerchart.svg" width="8" height="8" alt="">
+            <img class="footer-compare-img" src="img/footerchart.svg" width="8" height="8" alt="Сравнить">
             Сравнить
           </a>
           <a class="footer-link-item trash-footer" href="#">
-            <img class="trash-footer-img" src="img/footertrash.svg" width="10" height="10" alt="">
+            <img class="trash-footer-img" src="img/footertrash.svg" width="10" height="10" alt="Корзина">
             Корзина
           </a>
         </div>
       </div>
       <div class="footer-block-second">
-         <span class="footer-address text-sign">
-      г. Москва, ул. Строителей,15
-    </span>
+        <span class="footer-address text-sign"> г. Москва, ул. Строителей,15 </span>
         <nav class="footer-nav">
           <ul class="footer-list">
             <li class="footer-list-item">
@@ -540,7 +527,8 @@
         <ul class="footer-social-list">
           <li>
             <a class="footer-social-list-link" href="#">
-              <svg class="footer-social-hover" width="32" height="32" viewBox="0 0 32 32" fill="none"
+              <span class="visually-hidden">Facebook</span>
+              <svg class="footer-social-hover" aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
                 <path d="M31.9973 16C31.9973 7.16267 24.8347 0 15.9987
                 0C7.16267 0 0 7.16267 0 16C0 23.984 5.85067 30.6027
@@ -555,7 +543,8 @@
           </li>
           <li class="social-indents">
             <a class="footer-social-list-link" href="#">
-              <svg class="footer-social-hover" width="32" height="32" viewBox="0 0 32 32" fill="none"
+              <span class="visually-hidden">Instagram</span>
+              <svg class="footer-social-hover" aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
                 <path d="M21 16C21 17.3261 20.4732 18.5979 19.5355
                 19.5355C18.5979 20.4732 17.3261 21 16 21C14.6739
@@ -601,7 +590,8 @@
           </li>
           <li>
             <a class="footer-social-list-link" href="#">
-              <svg class="footer-social-hover" width="32" height="32" viewBox="0 0 32 32" fill="none"
+              <span class="visually-hidden">Twitter</span>
+              <svg class="footer-social-hover" aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 32C13.8333 32 11.7604 31.5781
                 9.78125 30.7344C7.80208 29.8906 6.09896 28.7552
@@ -663,10 +653,8 @@
 </footer>
 <section class="modal-map visually-hidden">
   <h2 class="visually-hidden">Как до нас добраться</h2>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473727!2d37.52742931613349!3d55.687034004529714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1601979689429!5m2!1sru!2sru"
-    width="959" height="559" style="border:0;" allowfullscreen=""
-    aria-hidden="false" tabindex="0"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473727!2d37.52742931613349!3d55.687034004529714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1601979689429!5m2!1sru!2sru"
+    width="959" height="559" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
 <section class="modal-write visually-hidden">
@@ -674,12 +662,12 @@
   <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
     <ul class="style-form-write">
       <li>
-        <label class="modal-title">Ваше имя:</label>
-        <input class="name-form" type="text" name="first-second-name" placeholder="Имя Фамилия">
+        <label for="first-second-name" class="modal-title">Ваше имя:</label>
+        <input class="name-form" type="text" name="first-second-name" id="first-second-name" placeholder="Имя Фамилия">
       </li>
       <li class="padding-form-email">
-        <label class="modal-title">Ваш e-mail:</label>
-        <input class="email-form" type="email" name="email" placeholder="email@example.com">
+        <label for="email" class="modal-title">Ваш e-mail:</label>
+        <input class="email-form" type="email" name="email" id="email" placeholder="email@example.com">
       </li>
       <li class="text-modal-stile">
         <label class="modal-title" for="note">Текст письма:</label>
@@ -690,6 +678,6 @@
   </form>
   <button class="modal-close" type="button" aria-label="Закрыть" id="close-write-us"></button>
 </section>
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>

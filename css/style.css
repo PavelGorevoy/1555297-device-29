@@ -139,10 +139,6 @@ li {
   line-height: 20px;
 }
 
-.menu-header-search {
-  transition: opacity .2s;
-}
-
 .form-input-search {
   background-color: transparent;
   border: none;
@@ -150,6 +146,10 @@ li {
   padding: 14px 0 14px 37px;
   width: 356px;
   transition: opacity .2s, color .2s, background-color .2s, outline-width .2s;
+}
+
+.menu-header-search {
+  transition: opacity .2s;
 }
 
 .form-input-search:focus {
